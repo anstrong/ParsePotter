@@ -66,8 +66,8 @@ class Question(WebObject):
         return str(f'{self.prompt}?')
 
 class Answer(WebObject):
-    valueItem = HTMLItem("label", "question_id", 7, 3)
-    correctItem = HTMLItem("is_correct", "answer_order", 11, 2)
+    valueItem = HTMLItem("label", "question_id", 8, 3)
+    correctItem = HTMLItem("is_correct", "answer_order", 12, 2)
     orderItem = HTMLItem("answer_order", "}", 13, 1)
 
     subdirectory = "answers"

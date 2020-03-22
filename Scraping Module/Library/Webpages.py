@@ -43,7 +43,7 @@ class ListedPage(Webpage, Searchable):
         super().__init__(str(f"{root}/{subdir}"))
 
     def get_ids(self):
-        idString = HTMLItem("id", "href", 5, 3)
+        idString = HTMLItem('"id"', "href", 6, 3)
         return self.parse_items(self.text, idString)
 
 class WebObject(Searchable):
@@ -76,15 +76,14 @@ class WebObject(Searchable):
         idList = itemPage.get_ids()
 
         itemList = []
-        itemList.append(itemType(idList[0]))
-        for i in range(len(idList)-1):
+        for itemID in idList:
             if connector is False:
-                newItem = itemType(idList[i])
+                newItem = itemType(itemID)
             else:
-                newItem = itemType(idList[i], connector)
+                newItem = itemType(itemID, connector)
             itemList.append(newItem)
 
-        print(str(itemList))
+        print(f"{newItem.ID}: {itemList}")
         return itemList
 
     def __repr__(self):
