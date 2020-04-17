@@ -25,11 +25,16 @@ class Webpage():
             raise Exception(f"Webpage error: {self.address}")
 
     def make_visible(self, class_name, wrapper):
-        if wrapper == "":
-            wrapper = self.driver
-        element = wrapper.find_element_by_class_name(class_name)
-        self.driver.execute_script("arguments[0].setAttribute('style','visibility:visible;');", element)
-        return element
+        try:
+            if wrapper == "":
+                wrapper = self.driver
+            element = wrapper.find_element_by_class_name(class_name)
+            self.driver.execute_script("arguments[0].setAttribute('style','visibility:visible;');", element)
+            return element
+        except:
+            self.driver.refresh()
+            print(f"{class_name} not found on {self.address}; reloading")
+            self.make_visible(class_name, wrapper)
 
     def __str__(self):
         return self.address

@@ -4,11 +4,13 @@ from .Webpages import *
 class Quiz():
     backend_link = HTMLItem("https:", "style", 0, 2)
 
-    def __init__(self, address):
-        self.page = self.load_backend(address)
+    def __init__(self, title, address):
+        self.title = title
+        self.address = address
+        self.page = self.load_backend(self.address)
         self.num_questions = self.get_num_questions()
-        self.questions = self.get_questions()
-        print(self.questions)
+        #self.questions = self.get_questions()
+        #print(self.questions)
 
     def load_backend(self, address):
         homepage = Webpage(address)
@@ -22,11 +24,18 @@ class Quiz():
         return Webpage(new_address)
 
     def get_num_questions(self):
+        self.page.make_visible("QuizCover-subheading-content", "")
         wrapper = self.page.driver.find_element_by_class_name("QuizCover-subheading-content")
         HTML = wrapper.get_attribute('innerHTML')
         soup = BeautifulSoup(HTML, "html.parser")
         result = soup.get_text()
-        return int(result[:result.find("q") - 1])
+        try:
+            return int(result[:result.find("q") - 1])
+        except:
+            self.page.driver.refresh()
+            print(f"Number of questions not found on {self.title}; reloading")
+            self.get_num_questions()
+
 
     def get_questions(self):
         questions = []

@@ -113,6 +113,23 @@ def webTest():
 def webTest2(address):
     quiz = Quiz(address)
 
-
-
-webTest2("https://www.wizardingworld.com/quiz/the-ultimate-food-quiz")
+def webTest3():
+    homepage = Webpage("https://www.wizardingworld.com/quiz")
+    html = BeautifulSoup(homepage.driver.page_source, "html.parser")
+    quizzes = html("a", attrs={'class': ['_2IGobkh6', '_3Wjob5HG']})
+    link_item = HTMLItem("href=", "title", 6, 2)
+    title_item = HTMLItem("title=", "div", 7, 5)
+    quiz_list = []
+    for quiz in quizzes:
+        str = quiz.prettify()
+        address = "https://www.wizardingworld.com" + link_item.extract_from(str)
+        title = title_item.extract_from(str)
+        quiz_list.append(Quiz(title, address))
+        
+    print(quiz_list)
+    
+def webTest4():
+    site = Pottermore()
+    
+    
+webTest4()
