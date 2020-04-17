@@ -1,5 +1,7 @@
 from urllib.request import Request, urlopen
 from bs4 import BeautifulSoup, SoupStrainer
+from selenium import webdriver
+import time
 
 from .Parseable import Searchable
 from .WebItems import *
@@ -14,29 +16,23 @@ class Webpage():
 
     def __init__(self, address):
         self.address = address
+        self.driver = webdriver.Chrome()
         try:
-            self.html = self.load_page()
-            self.text = self.get_text()
+            self.driver.get(self.address)
+            time.sleep(3)
         except:
             print(f"Webpage error: {self.address}")
             raise Exception(f"Webpage error: {self.address}")
 
-    def load_page(self):
-        try:
-            url = Request(self.address, headers = self.hdr)
-            return urlopen(url).read()
-        except:
-            raise Exception("Page cannot be loaded")
-
-    def get_text(self):
-        try:
-            soup = BeautifulSoup(self.html, "html.parser")
-            return soup.get_text()
-        except:
-            raise Exception("Text cannot be loaded")
+    def make_visible(self, class_name, wrapper):
+        if wrapper == "":
+            wrapper = self.driver
+        element = wrapper.find_element_by_class_name(class_name)
+        self.driver.execute_script("arguments[0].setAttribute('style','visibility:visible;');", element)
+        return element
 
     def __str__(self):
-        return str(f'{self.address}{self.code}')
+        return self.address
 
 class ListedPage(Webpage, Searchable):
     def __init__(self, root, subdir):

@@ -1,6 +1,11 @@
 import re
 
 from Library import *
+import time
+from bs4 import BeautifulSoup, SoupStrainer
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 def download_users():
     path = '/Users/annabelle_strong/Downloads/'
@@ -62,7 +67,52 @@ def test():
     print(testAuthor)
 
 def webTest():
-    myPage = Webpage("https://www.qzzr.com/api/users/17578")
-    print(myPage.get_text())
+    #myPage2 = Webpage("https://www.qzzr.com/widget/quiz/fi9xdWl6emVzLzQ3NTQ2NT9zdGF0ZVtwX3VdPWh0dHBzJTNBJTJGJTJGd3d3LndpemFyZGluZ3dvcmxkLmNvbSUyRnF1aXolMkZ0aGUtdWx0aW1hdGUtZm9vZC1xdWl6JnN0YXRlW3JdPWh0dHBzJTNBJTJGJTJGd3d3Lmdvb2dsZS5jb20lMkYmc3RhdGVbbl09bm9uZQ/question/fi9zZXNzaW9ucy80ODU4ODY2NjEvMjM2MjcxMQ")
+    myPage = Webpage("https://www.wizardingworld.com/quiz/the-ultimate-food-quiz")
+    time.sleep(3)
+    page = myPage.driver
+    button = page.find_element_by_class_name("_1vIqZGTd")#("_23LVVmnZ")#("_3AqE2Mbn")
+    print(button)
+    myPage.driver.execute_script("arguments[0].setAttribute('style','visibility:visible;');", button)
+    #print(myPage.driver.page_source)
+    start = button.find_element_by_class_name("quiz-modal")
+    myPage.driver.execute_script("arguments[0].setAttribute('style','visibility:visible;');", start)
+    #start.switch_to_frame("QUIZ:")
+    #element1 = myPage.driver.find_element_by_xpath("/html/body/div/div/div/div/div/div[2]/section/div[2]/div/button")
+    #myPage.driver.execute_script("arguments[0].click();", start)
 
-test()
+    tags = start.get_attribute('innerHTML')
+    soup = BeautifulSoup(tags, "html.parser")
+    frame = soup.find_all('iframe')
+    txt = str(frame)
+    start = txt.find("https:")
+    end = txt.find("style") - 2
+    link = txt[start:end]
+    myPage2 = Webpage(link)
+    #myPage2 = Webpage("https://www.qzzr.com/widget/quiz/fi9xdWl6emVzLzQ3NTQ2NT9zdGF0ZVtwX3VdPWh0dHBzJTNBJTJGJTJGd3d3LndpemFyZGluZ3dvcmxkLmNvbSUyRnF1aXolMkZ0aGUtdWx0aW1hdGUtZm9vZC1xdWl6JnN0YXRlW25dPW5vbmU")
+    time.sleep(3)
+    page2 = myPage2.driver
+    #print(page2.page_source)
+    #clicker = page2.find_element_by_class_name("QuizCover-start-button")
+    #page2.execute_script("arguments[0].setAttribute('style','visibility:visible;');", clicker)
+    page2.find_element_by_tag_name("button").click()
+    time.sleep(3)
+    #print(page2.page_source)
+ 
+
+    #time.sleep(3)
+    options = page2.find_element_by_class_name("QuizQuestion-options-list")
+    page2.execute_script("arguments[0].setAttribute('style','visibility:visible;');", options)
+
+    html = BeautifulSoup(page2.page_source,"html.parser")
+    answers = html("span",attrs={'class':'QuizQuestionOption-item-label'})
+    for opt in answers:
+        print(opt.get_text())
+    text = html.get_text(", ")
+
+def webTest2(address):
+    quiz = Quiz(address)
+
+
+
+webTest2("https://www.wizardingworld.com/quiz/the-ultimate-food-quiz")

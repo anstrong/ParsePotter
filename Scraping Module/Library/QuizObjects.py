@@ -1,83 +1,92 @@
 from .WebItems import *
 from .Webpages import *
 
-class Author(WebObject):
-    nameItem = HTMLItem("nickname", "image", 11, 3)
-    usernameItem = HTMLItem("display_name", "initials", 15, 3)
+class Quiz():
+    backend_link = HTMLItem("https:", "style", 0, 2)
 
-    subdirectory = "users"
-    def __init__(self, ID):
-        super().__init__(ID)
+    def __init__(self, address):
+        self.page = self.load_backend(address)
+        self.num_questions = self.get_num_questions()
+        self.questions = self.get_questions()
+        print(self.questions)
 
-    def load_data(self):
-        self.name = self.find_attribute(self.nameItem)
-        self.username = self.find_attribute(self.usernameItem)
-        if self.fullyParse:
-            self.quizzes = self.get_subitems("published", Quiz, self)
-            self.numQuizzes = len(self.quizzes)
+    def load_backend(self, address):
+        homepage = Webpage(address)
+        homepage.make_visible("_1vIqZGTd", "")
+        wrapper = homepage.make_visible("quiz-modal", "")
+        HTML = wrapper.get_attribute('innerHTML')
+        soup = BeautifulSoup(HTML, "html.parser")
+        frame = soup.find_all('iframe')
+        txt = str(frame)
+        new_address = self.backend_link.extract_from(txt)
+        return Webpage(new_address)
+
+    def get_num_questions(self):
+        wrapper = self.page.driver.find_element_by_class_name("QuizCover-subheading-content")
+        HTML = wrapper.get_attribute('innerHTML')
+        soup = BeautifulSoup(HTML, "html.parser")
+        result = soup.get_text()
+        return int(result[:result.find("q") - 1])
+
+    def get_questions(self):
+        questions = []
+        for i in range (0, self.num_questions):
+            self.next()
+            questions.append(Question(self.page))
+
+    def next(self):
+        self.page.driver.find_element_by_tag_name("button").click()
+        time.sleep(3)
+
+    def __repr__(self):
+        return str(f'{self.title} [{self.num_questions} questions]')
+
+class Question():
+    number = 0;
+
+    def __init__(self, page):
+        Question.number += 1
+        self.num = Question.number
+        self.page = page
+        self.answers = self.get_answers()
+        self.question = self.get_question()
+
+    def get_answers(self):
+        self.page.make_visible("QuizQuestion-options-list", "")
+        first_answer = self.page.driver.find_element_by_class_name("QuizQuestion-options-list")
+        first_answer.click()
+        time.sleep(3)
+
+        HTML = BeautifulSoup(self.page.driver.page_source, "html.parser")
+        answers = HTML("span", attrs={'class': 'QuizQuestionOption-item-label'})
+        result = []
+        for option in answers:
+            result.append(Answer(option))
+        return result
+
+    def get_question(self):
+        self.page.make_visible("QuizQuestion-options-legend", "")
+        HTML = BeautifulSoup(self.page.driver.page_source, "html.parser")
+        text = HTML.find(attrs={'class': 'QuizQuestion-info-title'})
+        return text.get_text()
+
+    def __repr__(self):
+        return self.question
+
+class Answer():
+    def __init__(self, chunk):
+        print(chunk)
+        self.label = self.get_label(chunk)
+        self.correct = self.get_correct(chunk)
+
+    def get_label(self, chunk):
+        return chunk.get_text()
+
+    def get_correct(self, chunk):
+        if chunk.prettify().find("is-incorrect") != -1:
+            return False
         else:
-            self.numQuizzes = -1
+            return True
 
     def __repr__(self):
-        return str(f'{self.name} ("{self.username}"): {self.numQuizzes}')
-
-class Quiz(WebObject):
-    titleItem = HTMLItem("title", "description", 8, 3)
-    authorItem = HTMLItem("author", "questions", 48, 4)
-    countItem = HTMLItem("count", "slug", 7, 3)
-
-    subdirectory = "quizzes"
-    def __init__(self, ID, knownAuthor = False):
-        self.knownAuthor = knownAuthor
-        super().__init__(ID, knownAuthor)
-
-    def load_data(self):
-        self.title = self.find_attribute(self.titleItem)
-        self.authorID = self.find_attribute(self.authorItem)
-        self.author = Author(self.authorID) if self.knownAuthor is False else self.knownAuthor
-        self.count = self.find_attribute(self.countItem)
-        if self.fullyParse:
-            self.questions = self.get_subitems("questions", Question)
-
-    def __repr__(self):
-        return str(f'{self.title}, written by {self.author.name} [{self.count} questions]')
-
-class Question(WebObject):
-    promptItem = HTMLItem("title", "quiz", 7, 3)
-    orderItem = HTMLItem("question_order", "random_answers", 13, 2)
-
-    subdirectory = "questions"
-    def __repr__(self, ID):
-        super().__init__(ID)
-
-    def load_data(self):
-        self.prompt = self.find_attribute(self.promptItem)
-        self.order = self.find_attribute(self.orderItem)
-        if self.fullyParse:
-            self.options = self.get_subitems("answers", Answer)
-            self.correct = self.get_correct()
-
-    def get_correct(self):
-        for answer in self.options:
-            if answer.correct is True:
-                self.correct = answer
-
-    def __repr__(self):
-        return str(f'{self.prompt}?')
-
-class Answer(WebObject):
-    valueItem = HTMLItem("label", "question_id", 8, 3)
-    correctItem = HTMLItem("is_correct", "answer_order", 12, 2)
-    orderItem = HTMLItem("answer_order", "}", 13, 1)
-
-    subdirectory = "answers"
-    def __init__(self, ID):
-        super().__init__(ID)
-
-    def load_data(self):
-        self.value = self.find_attribute(self.valueItem)
-        self.correct = True if self.find_attribute(self.correctItem) == "true" else False
-        self.order = self.find_attribute(self.orderItem)
-
-    def __repr__(self):
-        return str(f'{self.value}: {self.correct}')
+        return str(f'{self.label}: {self.correct}')
