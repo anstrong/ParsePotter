@@ -20,6 +20,9 @@ class Pottermore():
         self.file = open("PottermoreQuizzes.csv", "a+");
         self.get_newest()
         #print(str(self.quizzes))
+        #for quiz in self.quizzes:
+            #print(str(quiz))
+            #self.write(repr(quiz))
         self.file.close()
         Webpage.driver.quit()
 
@@ -41,7 +44,7 @@ class Pottermore():
         for quiz in quiz_chunks:
             str = quiz.prettify()
             address = "https://www.wizardingworld.com" + self.link_item.extract_from(str)
-            title = self.title_item.extract_from(str)
+            title = self.title_item.extract_from(str).strip()
             self.add_quiz(title, address)
 
         last_height = self.page.driver.execute_script("return document.body.scrollHeight")
@@ -49,25 +52,32 @@ class Pottermore():
         time.sleep(5)
         new_height = self.page.driver.execute_script("return document.body.scrollHeight")
         if new_height == last_height:
-            return
+            self.page.driver.execute_script("window.scrollTo(0, 350);")
+            time.sleep(10)
+            self.page.driver.execute_script("window.scrollTo(0, 350);")
+            time.sleep(15)
+            self.update()
+            time.sleep(5)
         else:
             last_height = new_height
             self.update()
+            time.sleep(5)
 
     def add_quiz(self, title, address):
         if self.is_new(title):
-            #try:
-            new_quiz = Quiz(title, address)
-            self.quizzes.append(new_quiz)
-            self.write(repr(new_quiz))
-            # except:
-            #     try:
-            #         new_quiz = Quiz(title, address)
-            #         self.quizzes.append(new_quiz)
-            #         self.write(repr(new_quiz))
-            #     except:
-            #         print(f"{title} couldn't be loaded")
-            #         return
+            try:
+                new_quiz = Quiz(title, address)
+                print(str(new_quiz))
+                self.quizzes.append(new_quiz)
+                self.write(repr(new_quiz))
+            except:
+                try:
+                    new_quiz = Quiz(title, address)
+                    self.quizzes.append(new_quiz)
+                    self.write(repr(new_quiz))
+                except:
+                    print(f"{title} couldn't be loaded")
+                    return
 
     def get_newest(self):
         HTML = BeautifulSoup(self.page.driver.page_source, "html.parser")

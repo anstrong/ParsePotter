@@ -26,7 +26,7 @@ class Quiz():
         self.address = content[1]
         self.num_questions = int(content[2])
         questions = []
-        for i in range(2, 2*self.num_questions, 2):
+        for i in range(3, 2*self.num_questions, 2):
             new_question = Question()
             new_question.read_content([content[i], content[i+1]])
             questions.append(new_question)
@@ -63,7 +63,7 @@ class Quiz():
     def get_questions(self):
         questions = []
         for i in range(0, self.num_questions):
-            print(f"\b\b\b\b\b{i+1}/{self.num_questions}")
+            #print(f"\b\b\b\b\b{i+1}/{self.num_questions}")
             self.next()
             question = Question(self.page)
             questions.append(question)
@@ -79,7 +79,11 @@ class Quiz():
         self.__init__(self.title, self.address)
 
     def __str__(self):
-        return self.title
+        result = self.title
+        for question in self.questions:
+            result += "\n\t" + str(question)
+        return result
+        #return self.title
 
     def __repr__(self):
         content = ""
@@ -132,17 +136,17 @@ class Question():
         result = []
         for option in answers:
             result.append(Answer(option))
-        print(result)
         return result
 
     def get_question(self):
         self.page.make_visible("QuizQuestion-info", "")
+        time.sleep(2)
         HTML = BeautifulSoup(self.page.driver.page_source, "html.parser")
         text = HTML.find("h2", attrs={'class': 'QuizQuestion-info-title'})
         return text.get_text()
 
     def read_content(self, list):
-        self.question = list[0]
+        self.question = str(list[0])
         self.answers = []
         for answer in list[1]:
             new_answer = Answer()
@@ -154,7 +158,7 @@ class Question():
         result = ""
         result += self.question
         for answer in self.answers:
-            result += "\n\t" + str(answer)
+            result += "\n\t\t" + str(answer)
         return result
 
     def __repr__(self):
@@ -184,7 +188,6 @@ class Answer():
         return chunk.get_text()
 
     def get_correct(self, chunk):
-        print(chunk.prettify())
         if chunk.prettify().find("is-incorrect") != -1:
             return False
         else:
