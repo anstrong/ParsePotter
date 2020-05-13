@@ -11,8 +11,8 @@ class Pottermore():
     def __init__(self):
         self.file = open("PottermoreQuizzes.csv", "r");
         self.quizzes = self.read()
-        print(str(self))
         self.file.close()
+        print(str(self))
 
         self.address = "https://www.wizardingworld.com/quiz"
         self.page = Webpage(self.address)
@@ -38,30 +38,32 @@ class Pottermore():
         return quizzes
 
 
-    def update(self):
+    def update(self, iteration):
         HTML = BeautifulSoup(self.page.driver.page_source, "html.parser")
         quiz_chunks = HTML("a", attrs={'class': ['_2IGobkh6', '_3Wjob5HG']})
         for quiz in quiz_chunks:
             str = quiz.prettify()
             address = "https://www.wizardingworld.com" + self.link_item.extract_from(str)
-            title = self.title_item.extract_from(str).strip()
-            self.add_quiz(title, address)
+            title = self.title_item.extract_from(str).strip().replace("&amp;", "and")
+            if(title.find("Chapter") == -1):
+                self.add_quiz(title, address)
 
         last_height = self.page.driver.execute_script("return document.body.scrollHeight")
         self.page.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
         time.sleep(5)
         new_height = self.page.driver.execute_script("return document.body.scrollHeight")
-        if new_height == last_height:
-            self.page.driver.execute_script("window.scrollTo(0, 350);")
-            time.sleep(10)
-            self.page.driver.execute_script("window.scrollTo(0, 350);")
-            time.sleep(15)
-            self.update()
-            time.sleep(5)
+        if(iteration < 3):
+            if new_height == last_height:
+                self.page.driver.execute_script("window.scrollTo(0, 350);")
+                time.sleep(5)
+                self.page.driver.execute_script("window.scrollTo(0, 350);")
+                time.sleep(10)
+                self.update(iteration+1)
+            else:
+                last_height = new_height
+                self.update(iteration+1)
         else:
-            last_height = new_height
-            self.update()
-            time.sleep(5)
+            print("No new quizzes found.")
 
     def add_quiz(self, title, address):
         if self.is_new(title):
@@ -90,7 +92,7 @@ class Pottermore():
             self.quizzes.append(new_quiz)
             self.write(repr(new_quiz))
 
-        self.update()
+        self.update(0)
 
     def is_new(self, title):
         quizzes = str(self)
@@ -105,7 +107,6 @@ class Pottermore():
         result = ""
         for quiz in self.quizzes:
             result+= str(quiz) + '\n'
-
         return result
 
 

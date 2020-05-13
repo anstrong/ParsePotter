@@ -63,7 +63,7 @@ class Quiz():
     def get_questions(self):
         questions = []
         for i in range(0, self.num_questions):
-            #print(f"\b\b\b\b\b{i+1}/{self.num_questions}")
+            print(f"\b\b\b\b\b{i+1}/{self.num_questions}")
             self.next()
             question = Question(self.page)
             questions.append(question)

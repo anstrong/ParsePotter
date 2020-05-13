@@ -131,5 +131,4 @@ def webTest3():
 def webTest4():
     site = Pottermore()
     
-    
 webTest4()
