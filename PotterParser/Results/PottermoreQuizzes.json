@@ -23982,614 +23982,614 @@
         ]
     },
     {
-        "title": "The Definitive Rubeus Hagrid Quiz",
-        "address": "https://www.wizardingworld.com/quiz/the-definitive-rubeus-hagrid-quiz",
-        "questions": [
-            {
-                "number": 1,
-                "label": "In which chapter did we first meet Hagrid?",
-                "type": "radio",
-                "style": "text",
-                "answers": [
-                    {
-                        "label": "\u2018The Boy Who Lived\u2019",
-                        "correct": true
-                    },
-                    {
-                        "label": "\u2018The Keeper of the Keys\u2019",
-                        "correct": false
-                    },
-                    {
-                        "label": "\u2018The Letters from No One\u2019",
-                        "correct": false
-                    },
-                    {
-                        "label": "\u2018The Worst Birthday\u2019",
-                        "correct": false
-                    }
-                ]
-            },
-            {
-                "number": 2,
-                "label": "Which book did Hagrid assign to his Care of Magical Creatures class?",
-                "type": "radio",
-                "style": "text",
-                "answers": [
-                    {
-                        "label": "The Monster Book of Monsters",
-                        "correct": true
-                    },
-                    {
-                        "label": "Fantastic Beasts and Where to Find Them",
-                        "correct": false
-                    },
-                    {
-                        "label": "Hairy Snout, Human Heart",
-                        "correct": false
-                    },
-                    {
-                        "label": "From Egg to Inferno: A Dragon Keeper\u2019s Guide",
-                        "correct": false
-                    }
-                ]
-            },
-            {
-                "number": 3,
-                "label": "Before becoming a teacher, what was Hagrid\u2019s job title at Hogwarts?",
-                "type": "radio",
-                "style": "text",
-                "answers": [
-                    {
-                        "label": "Caretaker",
-                        "correct": false
-                    },
-                    {
-                        "label": "Gardener",
-                        "correct": false
-                    },
-                    {
-                        "label": "Beastmaster",
-                        "correct": false
-                    },
-                    {
-                        "label": "Keeper of Keys and Grounds",
-                        "correct": true
-                    }
-                ]
-            },
-            {
-                "number": 4,
-                "label": "Why was Hagrid expelled from Hogwarts?",
-                "type": "radio",
-                "style": "text",
-                "answers": [
-                    {
-                        "label": "He was accused of using Slytherin\u2019s monster to attack students",
-                        "correct": true
-                    },
-                    {
-                        "label": "He released the giant squid into the lake",
-                        "correct": false
-                    },
-                    {
-                        "label": "He used magic against a professor",
-                        "correct": false
-                    },
-                    {
-                        "label": "He was caught in the Forbidden Forest",
-                        "correct": false
-                    }
-                ]
-            },
-            {
-                "number": 5,
-                "label": "What did Hagrid get Harry for his eleventh birthday?",
-                "type": "radio",
-                "style": "text",
-                "answers": [
-                    {
-                        "label": "A carved wooden flute",
-                        "correct": false
-                    },
-                    {
-                        "label": "Hedwig",
-                        "correct": true
-                    },
-                    {
-                        "label": "A pile of homemade treats",
-                        "correct": false
-                    },
-                    {
-                        "label": "A photo album with pictures of his parents",
-                        "correct": false
-                    }
-                ]
-            },
-            {
-                "number": 6,
-                "label": "What does Hagrid\u2019s first name mean?",
-                "type": "radio",
-                "style": "text",
-                "answers": [
-                    {
-                        "label": "Red",
-                        "correct": true
-                    },
-                    {
-                        "label": "Large",
-                        "correct": false
-                    },
-                    {
-                        "label": "Protector",
-                        "correct": false
-                    },
-                    {
-                        "label": "Friend",
-                        "correct": false
-                    }
-                ]
-            },
-            {
-                "number": 7,
-                "label": "When did we first see Hagrid with Harry in the books?",
-                "type": "radio",
-                "style": "text",
-                "answers": [
-                    {
-                        "label": "He brought him to the Dursleys\u2019 as a baby",
-                        "correct": true
-                    },
-                    {
-                        "label": "He was sent to deliver Harry\u2019s Hogwarts letter",
-                        "correct": false
-                    },
-                    {
-                        "label": "He rescued Harry from Knockturn Alley",
-                        "correct": false
-                    },
-                    {
-                        "label": "He helped Harry board the Hogwarts Express",
-                        "correct": false
-                    }
-                ]
-            },
-            {
-                "number": 8,
-                "label": "At what age was Hagrid expelled?",
-                "type": "radio",
-                "style": "text",
-                "answers": [
-                    {
-                        "label": "12",
-                        "correct": false
-                    },
-                    {
-                        "label": "13",
-                        "correct": true
-                    },
-                    {
-                        "label": "14",
-                        "correct": false
-                    },
-                    {
-                        "label": "15",
-                        "correct": false
-                    }
-                ]
-            },
-            {
-                "number": 9,
-                "label": "Where was Hagrid sent in Harry Potter and the Chamber of Secrets?",
-                "type": "radio",
-                "style": "text",
-                "answers": [
-                    {
-                        "label": "To the Ministry of Magic",
-                        "correct": false
-                    },
-                    {
-                        "label": "To St. Mungo\u2019s Hospital for Magical Maladies and Injuries",
-                        "correct": false
-                    },
-                    {
-                        "label": "To Azkaban",
-                        "correct": true
-                    },
-                    {
-                        "label": "To the Department of Mysteries",
-                        "correct": false
-                    }
-                ]
-            },
-            {
-                "number": 10,
-                "label": "What did Hagrid tell Harry he wanted more than anything in the world when he was young?",
-                "type": "radio",
-                "style": "text",
-                "answers": [
-                    {
-                        "label": "A sphinx",
-                        "correct": false
-                    },
-                    {
-                        "label": "A dragon",
-                        "correct": true
-                    },
-                    {
-                        "label": "A Basilisk",
-                        "correct": false
-                    },
-                    {
-                        "label": "A Thestral",
-                        "correct": false
-                    }
-                ]
-            },
-            {
-                "number": 11,
-                "label": "What colour and pattern was on Hagrid\u2019s trusty umbrella?",
-                "type": "radio",
-                "style": "text",
-                "answers": [
-                    {
-                        "label": "Blue and spotty",
-                        "correct": false
-                    },
-                    {
-                        "label": "Black",
-                        "correct": false
-                    },
-                    {
-                        "label": "Purple and stripy",
-                        "correct": false
-                    },
-                    {
-                        "label": "Pink and flowery",
-                        "correct": true
-                    }
-                ]
-            },
-            {
-                "number": 12,
-                "label": "Which of these treats did Hagrid like to bake?",
-                "type": "radio",
-                "style": "text",
-                "answers": [
-                    {
-                        "label": "Rock cakes",
-                        "correct": true
-                    },
-                    {
-                        "label": "Cauldron Cakes",
-                        "correct": false
-                    },
-                    {
-                        "label": "Pumpkin Pasties",
-                        "correct": false
-                    },
-                    {
-                        "label": "Treacle tart",
-                        "correct": false
-                    }
-                ]
-            },
-            {
-                "number": 13,
-                "label": "What was Hagrid\u2019s mother\u2019s name?",
-                "type": "radio",
-                "style": "text",
-                "answers": [
-                    {
-                        "label": "Hengist of Upper Barton",
-                        "correct": false
-                    },
-                    {
-                        "label": "Morholt",
-                        "correct": false
-                    },
-                    {
-                        "label": "Cyclops",
-                        "correct": false
-                    },
-                    {
-                        "label": "Fridwulfa",
-                        "correct": true
-                    }
-                ]
-            },
-            {
-                "number": 14,
-                "label": "When Harry first visited Hagrid\u2019s hut, what did he find outside the door?",
-                "type": "radio",
-                "style": "text",
-                "answers": [
-                    {
-                        "label": "His pink umbrella and a pair of wellies",
-                        "correct": false
-                    },
-                    {
-                        "label": "An axe and his moleskin coat",
-                        "correct": false
-                    },
-                    {
-                        "label": "A crossbow and a pair of galoshes",
-                        "correct": true
-                    },
-                    {
-                        "label": "A shotgun and a shovel",
-                        "correct": false
-                    }
-                ]
-            },
-            {
-                "number": 15,
-                "label": "Which of the following books did Hagrid consult\u00a0after obtaining a dragon egg?",
-                "type": "checkbox",
-                "style": "text",
-                "answers": [
-                    {
-                        "label": "The Monster Book of Monsters",
-                        "correct": false
-                    },
-                    {
-                        "label": "Dragon Species of Great Britain and Ireland",
-                        "correct": true
-                    },
-                    {
-                        "label": "Men Who Love Dragons Too Much",
-                        "correct": false
-                    },
-                    {
-                        "label": "From Egg to Inferno, A Dragon Keeper\u2019s Guide",
-                        "correct": true
-                    },
-                    {
-                        "label": "Fantastic Beasts and Where to Find Them",
-                        "correct": false
-                    }
-                ]
-            },
-            {
-                "number": 16,
-                "label": "Why did Hagrid tell Harry he would love to see him win the Triwizard Tournament?",
-                "type": "radio",
-                "style": "text",
-                "answers": [
-                    {
-                        "label": "To win the trophy for Hogwarts",
-                        "correct": false
-                    },
-                    {
-                        "label": "To gain practical experience with rare and fantastic beasts",
-                        "correct": false
-                    },
-                    {
-                        "label": "To show everyone that you don\u2019t have to be pure-blood to succeed",
-                        "correct": true
-                    },
-                    {
-                        "label": "To bring glory to Gryffindor house",
-                        "correct": false
-                    }
-                ]
-            },
-            {
-                "number": 17,
-                "label": "Why did Hagrid and Madame Maxime fall out at the Yule Ball?",
-                "type": "radio",
-                "style": "text",
-                "answers": [
-                    {
-                        "label": "He suggested she was half-giant",
-                        "correct": true
-                    },
-                    {
-                        "label": "He insulted Beauxbatons",
-                        "correct": false
-                    },
-                    {
-                        "label": "He asked her out and she said no",
-                        "correct": false
-                    },
-                    {
-                        "label": "He told her he thought Harry should win the cup",
-                        "correct": false
-                    }
-                ]
-            },
-            {
-                "number": 18,
-                "label": "What did Hagrid have his class study after Malfoy provoked Buckbeak?",
-                "type": "radio",
-                "style": "text",
-                "answers": [
-                    {
-                        "label": "Doxies",
-                        "correct": false
-                    },
-                    {
-                        "label": "Grindylows",
-                        "correct": false
-                    },
-                    {
-                        "label": "Erumpents",
-                        "correct": false
-                    },
-                    {
-                        "label": "Flobberworms",
-                        "correct": true
-                    }
-                ]
-            },
-            {
-                "number": 19,
-                "label": "Which of these creatures has Hagrid owned?",
-                "type": "radio",
-                "style": "text",
-                "answers": [
-                    {
-                        "label": "Chimaera",
-                        "correct": false
-                    },
-                    {
-                        "label": "Acromantula",
-                        "correct": true
-                    },
-                    {
-                        "label": "Manticore",
-                        "correct": false
-                    },
-                    {
-                        "label": "Demiguise",
-                        "correct": false
-                    }
-                ]
-            },
-            {
-                "number": 20,
-                "label": "Why did Hagrid tell Harry he was in Knockturn Alley in Harry Potter and the Chamber of Secrets?",
-                "type": "radio",
-                "style": "text",
-                "answers": [
-                    {
-                        "label": "To trade Acromantula venom",
-                        "correct": false
-                    },
-                    {
-                        "label": "To buy a dragon egg",
-                        "correct": false
-                    },
-                    {
-                        "label": "To buy a Vanishing Cabinet",
-                        "correct": false
-                    },
-                    {
-                        "label": "To buy Flesh-Eating Slug Repellent",
-                        "correct": true
-                    }
-                ]
-            },
-            {
-                "number": 21,
-                "label": "What was Hagrid\u2019s half-brother\u2019s name?",
-                "type": "radio",
-                "style": "text",
-                "answers": [
-                    {
-                        "label": "Grawp",
-                        "correct": true
-                    },
-                    {
-                        "label": "Bran the Bloodthirsty",
-                        "correct": false
-                    },
-                    {
-                        "label": "Karkus",
-                        "correct": false
-                    },
-                    {
-                        "label": "Golgomath",
-                        "correct": false
-                    }
-                ]
-            },
-            {
-                "number": 22,
-                "label": "During his trip to recruit the giants, where did Hagrid have a disagreement with a vampire?",
-                "type": "radio",
-                "style": "text",
-                "answers": [
-                    {
-                        "label": "Dijon",
-                        "correct": false
-                    },
-                    {
-                        "label": "Krakow",
-                        "correct": false
-                    },
-                    {
-                        "label": "Vienna",
-                        "correct": false
-                    },
-                    {
-                        "label": "Minsk",
-                        "correct": true
-                    }
-                ]
-            },
-            {
-                "number": 23,
-                "label": "How did Hagrid acquire his flying motorcycle?",
-                "type": "radio",
-                "style": "text",
-                "answers": [
-                    {
-                        "label": "He enchanted it himself",
-                        "correct": false
-                    },
-                    {
-                        "label": "He stole it from a Death Eater",
-                        "correct": false
-                    },
-                    {
-                        "label": "Sirius Black gave it to him",
-                        "correct": true
-                    },
-                    {
-                        "label": "Arthur Weasley gave it to him",
-                        "correct": false
-                    }
-                ]
-            },
-            {
-                "number": 24,
-                "label": "Which of these creatures did Hagrid cover in his Care of Magical Creatures classes?",
-                "type": "checkbox",
-                "style": "text",
-                "answers": [
-                    {
-                        "label": "Thestrals",
-                        "correct": true
-                    },
-                    {
-                        "label": "Unicorns",
-                        "correct": true
-                    },
-                    {
-                        "label": "Nifflers",
-                        "correct": true
-                    },
-                    {
-                        "label": "Pixies",
-                        "correct": false
-                    }
-                ]
-            },
-            {
-                "number": 25,
-                "label": "What song did Slughorn and Hagrid sing at Aragog\u2019s funeral?",
-                "type": "radio",
-                "style": "text",
-                "answers": [
-                    {
-                        "label": "\u2018Odo the Hero\u2019",
-                        "correct": true
-                    },
-                    {
-                        "label": "\u2018Uric the Oddball\u2019",
-                        "correct": false
-                    },
-                    {
-                        "label": "\u2018Emeric the Evil\u2019",
-                        "correct": false
-                    },
-                    {
-                        "label": "\u2018Beedle the Bard\u2019",
-                        "correct": false
-                    }
-                ]
-            }
+    "title": "The Definitive Rubeus Hagrid Quiz",
+    "address": "https://www.wizardingworld.com/quiz/the-definitive-rubeus-hagrid-quiz",
+    "questions": [
+      {
+        "number": 1,
+        "label": "In which chapter did we first meet Hagrid?",
+        "type": "radio",
+        "style": "text",
+        "answers": [
+          {
+            "label": "\u2018The Boy Who Lived\u2019",
+            "correct": true
+          },
+          {
+            "label": "\u2018The Keeper of the Keys\u2019",
+            "correct": false
+          },
+          {
+            "label": "\u2018The Letters from No One\u2019",
+            "correct": false
+          },
+          {
+            "label": "\u2018The Worst Birthday\u2019",
+            "correct": false
+          }
         ]
+      },
+      {
+        "number": 2,
+        "label": "Which book did Hagrid assign to his Care of Magical Creatures class?",
+        "type": "radio",
+        "style": "text",
+        "answers": [
+          {
+            "label": "The Monster Book of Monsters",
+            "correct": true
+          },
+          {
+            "label": "Fantastic Beasts and Where to Find Them",
+            "correct": false
+          },
+          {
+            "label": "Hairy Snout, Human Heart",
+            "correct": false
+          },
+          {
+            "label": "From Egg to Inferno: A Dragon Keeper\u2019s Guide",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "label": "Before becoming a teacher, what was Hagrid\u2019s job title at Hogwarts?",
+        "type": "radio",
+        "style": "text",
+        "answers": [
+          {
+            "label": "Caretaker",
+            "correct": false
+          },
+          {
+            "label": "Gardener",
+            "correct": false
+          },
+          {
+            "label": "Beastmaster",
+            "correct": false
+          },
+          {
+            "label": "Keeper of Keys and Grounds",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "label": "Why was Hagrid expelled from Hogwarts?",
+        "type": "radio",
+        "style": "text",
+        "answers": [
+          {
+            "label": "He was accused of using Slytherin\u2019s monster to attack students",
+            "correct": true
+          },
+          {
+            "label": "He released the giant squid into the lake",
+            "correct": false
+          },
+          {
+            "label": "He used magic against a professor",
+            "correct": false
+          },
+          {
+            "label": "He was caught in the Forbidden Forest",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "number": 5,
+        "label": "What did Hagrid get Harry for his eleventh birthday?",
+        "type": "radio",
+        "style": "text",
+        "answers": [
+          {
+            "label": "A carved wooden flute",
+            "correct": false
+          },
+          {
+            "label": "Hedwig",
+            "correct": true
+          },
+          {
+            "label": "A pile of homemade treats",
+            "correct": false
+          },
+          {
+            "label": "A photo album with pictures of his parents",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "number": 6,
+        "label": "What does Hagrid\u2019s first name mean?",
+        "type": "radio",
+        "style": "text",
+        "answers": [
+          {
+            "label": "Red",
+            "correct": true
+          },
+          {
+            "label": "Large",
+            "correct": false
+          },
+          {
+            "label": "Protector",
+            "correct": false
+          },
+          {
+            "label": "Friend",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "number": 7,
+        "label": "When did we first see Hagrid with Harry in the books?",
+        "type": "radio",
+        "style": "text",
+        "answers": [
+          {
+            "label": "He brought him to the Dursleys\u2019 as a baby",
+            "correct": true
+          },
+          {
+            "label": "He was sent to deliver Harry\u2019s Hogwarts letter",
+            "correct": false
+          },
+          {
+            "label": "He rescued Harry from Knockturn Alley",
+            "correct": false
+          },
+          {
+            "label": "He helped Harry board the Hogwarts Express",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "number": 8,
+        "label": "At what age was Hagrid expelled?",
+        "type": "radio",
+        "style": "text",
+        "answers": [
+          {
+            "label": "12",
+            "correct": false
+          },
+          {
+            "label": "13",
+            "correct": true
+          },
+          {
+            "label": "14",
+            "correct": false
+          },
+          {
+            "label": "15",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "number": 9,
+        "label": "Where was Hagrid sent in Harry Potter and the Chamber of Secrets?",
+        "type": "radio",
+        "style": "text",
+        "answers": [
+          {
+            "label": "To the Ministry of Magic",
+            "correct": false
+          },
+          {
+            "label": "To St. Mungo\u2019s Hospital for Magical Maladies and Injuries",
+            "correct": false
+          },
+          {
+            "label": "To Azkaban",
+            "correct": true
+          },
+          {
+            "label": "To the Department of Mysteries",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "number": 10,
+        "label": "What did Hagrid tell Harry he wanted more than anything in the world when he was young?",
+        "type": "radio",
+        "style": "text",
+        "answers": [
+          {
+            "label": "A sphinx",
+            "correct": false
+          },
+          {
+            "label": "A dragon",
+            "correct": true
+          },
+          {
+            "label": "A Basilisk",
+            "correct": false
+          },
+          {
+            "label": "A Thestral",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "number": 11,
+        "label": "What colour and pattern was on Hagrid\u2019s trusty umbrella?",
+        "type": "radio",
+        "style": "text",
+        "answers": [
+          {
+            "label": "Blue and spotty",
+            "correct": false
+          },
+          {
+            "label": "Black",
+            "correct": false
+          },
+          {
+            "label": "Purple and stripy",
+            "correct": false
+          },
+          {
+            "label": "Pink and flowery",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "number": 12,
+        "label": "Which of these treats did Hagrid like to bake?",
+        "type": "radio",
+        "style": "text",
+        "answers": [
+          {
+            "label": "Rock cakes",
+            "correct": true
+          },
+          {
+            "label": "Cauldron Cakes",
+            "correct": false
+          },
+          {
+            "label": "Pumpkin Pasties",
+            "correct": false
+          },
+          {
+            "label": "Treacle tart",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "number": 13,
+        "label": "What was Hagrid\u2019s mother\u2019s name?",
+        "type": "radio",
+        "style": "text",
+        "answers": [
+          {
+            "label": "Hengist of Upper Barton",
+            "correct": false
+          },
+          {
+            "label": "Morholt",
+            "correct": false
+          },
+          {
+            "label": "Cyclops",
+            "correct": false
+          },
+          {
+            "label": "Fridwulfa",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "number": 14,
+        "label": "When Harry first visited Hagrid\u2019s hut, what did he find outside the door?",
+        "type": "radio",
+        "style": "text",
+        "answers": [
+          {
+            "label": "His pink umbrella and a pair of wellies",
+            "correct": false
+          },
+          {
+            "label": "An axe and his moleskin coat",
+            "correct": false
+          },
+          {
+            "label": "A crossbow and a pair of galoshes",
+            "correct": true
+          },
+          {
+            "label": "A shotgun and a shovel",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "number": 15,
+        "label": "Which of the following books did Hagrid consult\u00a0after obtaining a dragon egg?",
+        "type": "checkbox",
+        "style": "text",
+        "answers": [
+          {
+            "label": "The Monster Book of Monsters",
+            "correct": false
+          },
+          {
+            "label": "Dragon Species of Great Britain and Ireland",
+            "correct": true
+          },
+          {
+            "label": "Men Who Love Dragons Too Much",
+            "correct": false
+          },
+          {
+            "label": "From Egg to Inferno, A Dragon Keeper\u2019s Guide",
+            "correct": true
+          },
+          {
+            "label": "Fantastic Beasts and Where to Find Them",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "number": 16,
+        "label": "Why did Hagrid tell Harry he would love to see him win the Triwizard Tournament?",
+        "type": "radio",
+        "style": "text",
+        "answers": [
+          {
+            "label": "To win the trophy for Hogwarts",
+            "correct": false
+          },
+          {
+            "label": "To gain practical experience with rare and fantastic beasts",
+            "correct": false
+          },
+          {
+            "label": "To show everyone that you don\u2019t have to be pure-blood to succeed",
+            "correct": true
+          },
+          {
+            "label": "To bring glory to Gryffindor house",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "number": 17,
+        "label": "Why did Hagrid and Madame Maxime fall out at the Yule Ball?",
+        "type": "radio",
+        "style": "text",
+        "answers": [
+          {
+            "label": "He suggested she was half-giant",
+            "correct": true
+          },
+          {
+            "label": "He insulted Beauxbatons",
+            "correct": false
+          },
+          {
+            "label": "He asked her out and she said no",
+            "correct": false
+          },
+          {
+            "label": "He told her he thought Harry should win the cup",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "number": 18,
+        "label": "What did Hagrid have his class study after Malfoy provoked Buckbeak?",
+        "type": "radio",
+        "style": "text",
+        "answers": [
+          {
+            "label": "Doxies",
+            "correct": false
+          },
+          {
+            "label": "Grindylows",
+            "correct": false
+          },
+          {
+            "label": "Erumpents",
+            "correct": false
+          },
+          {
+            "label": "Flobberworms",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "number": 19,
+        "label": "Which of these creatures has Hagrid owned?",
+        "type": "radio",
+        "style": "text",
+        "answers": [
+          {
+            "label": "Chimaera",
+            "correct": false
+          },
+          {
+            "label": "Acromantula",
+            "correct": true
+          },
+          {
+            "label": "Manticore",
+            "correct": false
+          },
+          {
+            "label": "Demiguise",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "number": 20,
+        "label": "Why did Hagrid tell Harry he was in Knockturn Alley in Harry Potter and the Chamber of Secrets?",
+        "type": "radio",
+        "style": "text",
+        "answers": [
+          {
+            "label": "To trade Acromantula venom",
+            "correct": false
+          },
+          {
+            "label": "To buy a dragon egg",
+            "correct": false
+          },
+          {
+            "label": "To buy a Vanishing Cabinet",
+            "correct": false
+          },
+          {
+            "label": "To buy Flesh-Eating Slug Repellent",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "number": 21,
+        "label": "What was Hagrid\u2019s half-brother\u2019s name?",
+        "type": "radio",
+        "style": "text",
+        "answers": [
+          {
+            "label": "Grawp",
+            "correct": true
+          },
+          {
+            "label": "Bran the Bloodthirsty",
+            "correct": false
+          },
+          {
+            "label": "Karkus",
+            "correct": false
+          },
+          {
+            "label": "Golgomath",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "number": 22,
+        "label": "During his trip to recruit the giants, where did Hagrid have a disagreement with a vampire?",
+        "type": "radio",
+        "style": "text",
+        "answers": [
+          {
+            "label": "Dijon",
+            "correct": false
+          },
+          {
+            "label": "Krakow",
+            "correct": false
+          },
+          {
+            "label": "Vienna",
+            "correct": false
+          },
+          {
+            "label": "Minsk",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "number": 23,
+        "label": "How did Hagrid acquire his flying motorcycle?",
+        "type": "radio",
+        "style": "text",
+        "answers": [
+          {
+            "label": "He enchanted it himself",
+            "correct": false
+          },
+          {
+            "label": "He stole it from a Death Eater",
+            "correct": false
+          },
+          {
+            "label": "Sirius Black gave it to him",
+            "correct": true
+          },
+          {
+            "label": "Arthur Weasley gave it to him",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "number": 24,
+        "label": "Which of these creatures did Hagrid cover in his Care of Magical Creatures classes?",
+        "type": "checkbox",
+        "style": "text",
+        "answers": [
+          {
+            "label": "Thestrals",
+            "correct": true
+          },
+          {
+            "label": "Unicorns",
+            "correct": true
+          },
+          {
+            "label": "Nifflers",
+            "correct": true
+          },
+          {
+            "label": "Pixies",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "number": 25,
+        "label": "What song did Slughorn and Hagrid sing at Aragog\u2019s funeral?",
+        "type": "radio",
+        "style": "text",
+        "answers": [
+          {
+            "label": "\u2018Odo the Hero\u2019",
+            "correct": true
+          },
+          {
+            "label": "\u2018Uric the Oddball\u2019",
+            "correct": false
+          },
+          {
+            "label": "\u2018Emeric the Evil\u2019",
+            "correct": false
+          },
+          {
+            "label": "\u2018Beedle the Bard\u2019",
+            "correct": false
+          }
+        ]
+      }
+    ]
     },
     {
         "title": "Back to (Sirius) Black Quiz",
@@ -39110,6 +39110,2676 @@
                     {
                         "label": "11pm",
                         "correct": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Complete The Quote Quiz: Remus Lupin Edition",
+        "address": "https://www.wizardingworld.com/quiz/complete-quote-quiz-lupin",
+        "questions": [
+            {
+                "number": 1,
+                "label": "\u201cThe charm that repels a Boggart is simple, yet it requires force of mind. You see, the thing that really finishes a Boggart is...\u201d",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Joy",
+                        "correct": false
+                    },
+                    {
+                        "label": "Laughter",
+                        "correct": true
+                    },
+                    {
+                        "label": "Smiling",
+                        "correct": false
+                    },
+                    {
+                        "label": "Crying",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 2,
+                "label": "\u201cWhy don\u2019t you come in? I\u2019ve just taken delivery of a ____ for our next lesson.\u201d",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Boggart",
+                        "correct": false
+                    },
+                    {
+                        "label": "Grindylow",
+                        "correct": true
+                    },
+                    {
+                        "label": "Kappa",
+                        "correct": false
+                    },
+                    {
+                        "label": "Hinkypunk",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 3,
+                "label": "\u201cThat suggests that what you fear most of all is ____ Very wise, Harry.\u201d",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Danger",
+                        "correct": false
+                    },
+                    {
+                        "label": "Fear",
+                        "correct": true
+                    },
+                    {
+                        "label": "Sadness",
+                        "correct": false
+                    },
+                    {
+                        "label": "Evil",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 4,
+                "label": "\u201cSometimes you remind me a lot of James. He called it my \u201c_____\u201d in company.\u201d",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Furry little problem",
+                        "correct": true
+                    },
+                    {
+                        "label": "Hairy misfortune",
+                        "correct": false
+                    },
+                    {
+                        "label": "Fluffy little issue",
+                        "correct": false
+                    },
+                    {
+                        "label": "Dog day afternoon",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 5,
+                "label": "\u201cAnd I\u2019ve told you a million times... ...that I am too old for you,\ntoo poor \u2026 too ______\u201d",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Broken",
+                        "correct": false
+                    },
+                    {
+                        "label": "Unpredictable",
+                        "correct": false
+                    },
+                    {
+                        "label": "Frightening",
+                        "correct": false
+                    },
+                    {
+                        "label": "Dangerous",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "number": 6,
+                "label": "\u201c______ is a useful spell, Harry, but the Death Eaters seem to think it is your signature move, and I urge you not to let it become so!\u201d",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Crucio",
+                        "correct": false
+                    },
+                    {
+                        "label": "Stupefy",
+                        "correct": false
+                    },
+                    {
+                        "label": "Expelliarmus",
+                        "correct": true
+                    },
+                    {
+                        "label": "Impedimenta",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 7,
+                "label": "\u201cNo, I think you\u2019re like James,\u201d said Lupin, \u201cwho would have regarded it as the height of dishonour to ____ his friends.\u201d",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Mistrust",
+                        "correct": true
+                    },
+                    {
+                        "label": "Betray",
+                        "correct": false
+                    },
+                    {
+                        "label": "Accuse",
+                        "correct": false
+                    },
+                    {
+                        "label": "Defy",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 8,
+                "label": "\u201cI think he looks like Dora, but she thinks he is like me. Not much hair. It looked black when he was born, but I swear it\u2019s turned___...\u201d",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Blue",
+                        "correct": false
+                    },
+                    {
+                        "label": "Pink",
+                        "correct": false
+                    },
+                    {
+                        "label": "White",
+                        "correct": false
+                    },
+                    {
+                        "label": "Ginger",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "number": 9,
+                "label": "\u201cBut he will know why I died and I hope he will understand.\nI was trying to make a world in which he could live a ____ life.\u201d",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Normal",
+                        "correct": false
+                    },
+                    {
+                        "label": "Better",
+                        "correct": false
+                    },
+                    {
+                        "label": "Happier",
+                        "correct": true
+                    },
+                    {
+                        "label": "Safer",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 10,
+                "label": "\u201cThe Dementors affect you worse than the others because there are _____ in your past that the others don\u2019t have.\u201d",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Horrors",
+                        "correct": true
+                    },
+                    {
+                        "label": "Things",
+                        "correct": false
+                    },
+                    {
+                        "label": "Events",
+                        "correct": false
+                    },
+                    {
+                        "label": "Memories",
+                        "correct": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Another Cosy Common Room Quiz ",
+        "address": "https://www.wizardingworld.com/quiz/cosy-common-room-quiz",
+        "questions": [
+            {
+                "number": 1,
+                "label": "To enter the Ravenclaw common room, you must partake in a...",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Battle of the wits with the Grey Lady",
+                        "correct": false
+                    },
+                    {
+                        "label": "Riddle",
+                        "correct": true
+                    },
+                    {
+                        "label": "General knowledge quiz",
+                        "correct": false
+                    },
+                    {
+                        "label": "Obstacle course",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 2,
+                "label": "To enter the Hufflepuff common room, you must tap a barrel to the rhythm of a Hufflepuff-related word. Which is it?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Pomona Sprout",
+                        "correct": false
+                    },
+                    {
+                        "label": "Badger",
+                        "correct": false
+                    },
+                    {
+                        "label": "Helga Hufflepuff",
+                        "correct": true
+                    },
+                    {
+                        "label": "The Fat Friar",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 3,
+                "label": "What shape is the Gryffindor common room?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Star-shaped",
+                        "correct": false
+                    },
+                    {
+                        "label": "Square",
+                        "correct": false
+                    },
+                    {
+                        "label": "Circular",
+                        "correct": true
+                    },
+                    {
+                        "label": "Triangular",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 4,
+                "label": "When Harry and Ron trick their way into the Slytherin common room, who is Crabbe and who is Goyle?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Harry is Crabbe, Ron is Goyle",
+                        "correct": false
+                    },
+                    {
+                        "label": "Ron is Crabbe, Harry is Goyle",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "number": 5,
+                "label": "In the books, which couple have their first kiss in the Gryffindor common room?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Dean & Ginny",
+                        "correct": false
+                    },
+                    {
+                        "label": "Harry & Cho",
+                        "correct": false
+                    },
+                    {
+                        "label": "Harry & Ginny",
+                        "correct": true
+                    },
+                    {
+                        "label": "Ron & Hermione",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 6,
+                "label": "Who puts an Enlargement Charm on a copy of The Quibbler, where Harry is on the cover, and hangs it in the Gryffindor common room?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Fred & George",
+                        "correct": true
+                    },
+                    {
+                        "label": "Hermione Granger",
+                        "correct": false
+                    },
+                    {
+                        "label": "Lee Jordan",
+                        "correct": false
+                    },
+                    {
+                        "label": "Dean Thomas",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 7,
+                "label": "In which book does Harry first visit the Ravenclaw common room?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Order of the Phoenix",
+                        "correct": false
+                    },
+                    {
+                        "label": "Half-Blood Prince",
+                        "correct": false
+                    },
+                    {
+                        "label": "Deathly Hallows",
+                        "correct": true
+                    },
+                    {
+                        "label": "Goblet of Fire",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 8,
+                "label": "As Harry learns, the Ravenclaw common room has a spectacular view of...",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Hogsmeade",
+                        "correct": false
+                    },
+                    {
+                        "label": "The Forbidden Forest",
+                        "correct": false
+                    },
+                    {
+                        "label": "The Quidditch pitch",
+                        "correct": false
+                    },
+                    {
+                        "label": "The mountains",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "number": 9,
+                "label": "The Slytherin common room is located in...",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "The third floor",
+                        "correct": false
+                    },
+                    {
+                        "label": "The North Tower",
+                        "correct": false
+                    },
+                    {
+                        "label": "The dungeons",
+                        "correct": true
+                    },
+                    {
+                        "label": "Nobody knows",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 10,
+                "label": "The Hufflepuff common room resembles a...",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Rabbit warren",
+                        "correct": false
+                    },
+                    {
+                        "label": "Beehive",
+                        "correct": false
+                    },
+                    {
+                        "label": "Badger\u2019s Sett",
+                        "correct": true
+                    },
+                    {
+                        "label": "Fox den",
+                        "correct": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Complete The Quote Quiz: Sirius Black Edition ",
+        "address": "https://www.wizardingworld.com/quiz/complete-quote-quiz-sirius",
+        "questions": [
+            {
+                "number": 1,
+                "label": "\"I\u2019m bored,\" said Sirius. \"Wish it was...",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "End of term",
+                        "correct": false
+                    },
+                    {
+                        "label": "Christmas",
+                        "correct": false
+                    },
+                    {
+                        "label": "Full moon",
+                        "correct": true
+                    },
+                    {
+                        "label": "A weekend",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 2,
+                "label": "\u2018So, what are Umbridge\u2019s lessons like?\u2019 Sirius interrupted. \u2018Is she\ntraining you all to ________\u2019",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Kill half-breeds?",
+                        "correct": true
+                    },
+                    {
+                        "label": "Clear your throats like her?",
+                        "correct": false
+                    },
+                    {
+                        "label": "Wear more pink?",
+                        "correct": false
+                    },
+                    {
+                        "label": "Torture Muggles?",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 3,
+                "label": "\"Yes, but the world isn\u2019t split into good people and...\"",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Death Eaters",
+                        "correct": true
+                    },
+                    {
+                        "label": "Bad people",
+                        "correct": false
+                    },
+                    {
+                        "label": "People like Voldemort",
+                        "correct": false
+                    },
+                    {
+                        "label": "Dark wizards",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 4,
+                "label": "\"My mother didn\u2019t have a heart, Kreacher,\" snapped Sirius. \"She\nkept herself alive out of pure...\"",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Hatred",
+                        "correct": false
+                    },
+                    {
+                        "label": "Spite",
+                        "correct": true
+                    },
+                    {
+                        "label": "Malice",
+                        "correct": false
+                    },
+                    {
+                        "label": "Stubbornness",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 5,
+                "label": "\"Voldemort doesn\u2019t march up to people\u2019s houses and ______, Harry.\"",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Curse them through the letterbox",
+                        "correct": false
+                    },
+                    {
+                        "label": "Ask if they're Muggle-born",
+                        "correct": false
+                    },
+                    {
+                        "label": "Bang on their front doors",
+                        "correct": true
+                    },
+                    {
+                        "label": "Ask them to be Death Eaters",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 6,
+                "label": "\"I\u2019ve waited ____ years, I\u2019m not going to wait much longer.\"",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Thirteen",
+                        "correct": false
+                    },
+                    {
+                        "label": "Eight",
+                        "correct": false
+                    },
+                    {
+                        "label": "Ten",
+                        "correct": false
+                    },
+                    {
+                        "label": "Twelve",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "number": 7,
+                "label": "\u201cI think the only reason I never lost my mind is that I knew I was...\u201d",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Innocent",
+                        "correct": true
+                    },
+                    {
+                        "label": "Strong",
+                        "correct": false
+                    },
+                    {
+                        "label": "Good",
+                        "correct": false
+                    },
+                    {
+                        "label": "Right",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 8,
+                "label": "\"I\u2019ve been living off ___ mostly. Can\u2019t steal too much\nfood from Hogsmeade; I\u2019d draw attention to myself.\"",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Plants",
+                        "correct": false
+                    },
+                    {
+                        "label": "Rubbish",
+                        "correct": false
+                    },
+                    {
+                        "label": "Rats",
+                        "correct": true
+                    },
+                    {
+                        "label": "Scraps",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 9,
+                "label": "\"If you want to know what a\nman\u2019s like, take a good look at how he treats his ____, not\nhis equals.\"",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Inferiors",
+                        "correct": true
+                    },
+                    {
+                        "label": "Enemies",
+                        "correct": false
+                    },
+                    {
+                        "label": "Friends",
+                        "correct": false
+                    },
+                    {
+                        "label": "Adversaries",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 10,
+                "label": "\"And don\u2019t forget, if you\u2019re talking about me among yourselves,\ncall me ____, OK?\"",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Snuffles",
+                        "correct": true
+                    },
+                    {
+                        "label": "Shaggy",
+                        "correct": false
+                    },
+                    {
+                        "label": "Fluffy",
+                        "correct": false
+                    },
+                    {
+                        "label": "Snuggles",
+                        "correct": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "The \u201cSiriusly\u201d Spooky Harry Potter Quiz",
+        "address": "https://www.wizardingworld.com/quiz/siriusly-spooky-harry-potter-quiz",
+        "questions": [
+            {
+                "number": 1,
+                "label": "What are the Bloody Baron\u2019s clothes stained with?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Silver blood",
+                        "correct": true
+                    },
+                    {
+                        "label": "Scarlet blood",
+                        "correct": false
+                    },
+                    {
+                        "label": "Spilt potion",
+                        "correct": false
+                    },
+                    {
+                        "label": "Chain rust",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 2,
+                "label": "What kind of animal was Voldemort drinking from in the Forbidden Forest in Philosopher\u2019s Stone?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "A Basilisk",
+                        "correct": false
+                    },
+                    {
+                        "label": "A unicorn",
+                        "correct": true
+                    },
+                    {
+                        "label": "A centaur",
+                        "correct": false
+                    },
+                    {
+                        "label": "Acromantula",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 3,
+                "label": "What kind of egg is a Basilisk born from?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Magpie egg",
+                        "correct": false
+                    },
+                    {
+                        "label": "Basilisk\u2019s egg",
+                        "correct": false
+                    },
+                    {
+                        "label": "Duck egg",
+                        "correct": false
+                    },
+                    {
+                        "label": "Chicken egg",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "number": 4,
+                "label": "What animal, associated with Hallowe'en, is Severus Snape compared to?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "A wolf",
+                        "correct": false
+                    },
+                    {
+                        "label": "A spider",
+                        "correct": false
+                    },
+                    {
+                        "label": "A bat",
+                        "correct": true
+                    },
+                    {
+                        "label": "A cat",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 5,
+                "label": "Finish Trelawney\u2019s creepy prediction: Tonight ... before midnight ... the servant ... will set out ... to rejoin ...\u2019",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "the long-awaited",
+                        "correct": false
+                    },
+                    {
+                        "label": "the one he fears most",
+                        "correct": false
+                    },
+                    {
+                        "label": "his master",
+                        "correct": true
+                    },
+                    {
+                        "label": "the Dark Lord",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 6,
+                "label": "What is the surname of the Muggle gardener who is murdered by Voldemort at the beginning of Goblet of Fire. Frank\u2026?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Banham",
+                        "correct": false
+                    },
+                    {
+                        "label": "Brown",
+                        "correct": false
+                    },
+                    {
+                        "label": "Blythe",
+                        "correct": false
+                    },
+                    {
+                        "label": "Bryce",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "number": 7,
+                "label": "Which of the following Hogwarts students cannot see Thestrals?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Lavender Brown",
+                        "correct": true
+                    },
+                    {
+                        "label": "Luna Lovegood",
+                        "correct": false
+                    },
+                    {
+                        "label": "Harry Potter",
+                        "correct": false
+                    },
+                    {
+                        "label": "Neville Longbottom",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 8,
+                "label": "Which teacher asks Harry what the difference is between an Inferius and a ghost?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Professor Snape",
+                        "correct": true
+                    },
+                    {
+                        "label": "Professor Lupin",
+                        "correct": false
+                    },
+                    {
+                        "label": "Professor Dumbledore",
+                        "correct": false
+                    },
+                    {
+                        "label": "Professor Moody",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 9,
+                "label": "What is the name of the potion that stops people who are bitten by werewolves becoming fully-fledged monsters?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Lunar Elixir",
+                        "correct": false
+                    },
+                    {
+                        "label": "Moonswane Potion",
+                        "correct": false
+                    },
+                    {
+                        "label": "Wolfsbane Potion",
+                        "correct": true
+                    },
+                    {
+                        "label": "Orb Draught",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 10,
+                "label": "What was the name of the woman the Bloody Baron loved and killed in a rage?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Moira Ravenclaw",
+                        "correct": false
+                    },
+                    {
+                        "label": "Morag Ravenclaw",
+                        "correct": false
+                    },
+                    {
+                        "label": "Helena Ravenclaw",
+                        "correct": true
+                    },
+                    {
+                        "label": "Rowena Ravenclaw",
+                        "correct": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "The Molly Weasley Challenge Quiz ",
+        "address": "https://www.wizardingworld.com/quiz/molly-weasley-challenge-quiz",
+        "questions": [
+            {
+                "number": 1,
+                "label": "How do you de-gnome a garden?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Plant Venomous Tentacula in the garden to ward the gnomes away",
+                        "correct": false
+                    },
+                    {
+                        "label": "Tickle the gnome until they run away",
+                        "correct": false
+                    },
+                    {
+                        "label": "Use a disarming charm",
+                        "correct": false
+                    },
+                    {
+                        "label": "Swing the gnome around and then drop them over the wall",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "number": 2,
+                "label": "How do you punish your child who flew a magic car to school?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Confiscate their broomstick",
+                        "correct": false
+                    },
+                    {
+                        "label": "Send them a Howler",
+                        "correct": true
+                    },
+                    {
+                        "label": "Put bars on their windows",
+                        "correct": false
+                    },
+                    {
+                        "label": "Ground them for life",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 3,
+                "label": "What do you do if a family member plans to help destroy the darkest wizard of all-time?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Expressly forbid them",
+                        "correct": false
+                    },
+                    {
+                        "label": "At least make them take the family owl",
+                        "correct": false
+                    },
+                    {
+                        "label": "Insist on going with them",
+                        "correct": false
+                    },
+                    {
+                        "label": "Give them so many chores they can't plan",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "number": 4,
+                "label": "When is it okay to give your kids a wallop with a broomstick?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "When they turn a teddy bear into a spider",
+                        "correct": false
+                    },
+                    {
+                        "label": "When they fly a car to school",
+                        "correct": false
+                    },
+                    {
+                        "label": "When they have fed their sibling an Acid Pop",
+                        "correct": true
+                    },
+                    {
+                        "label": "When their punching telescope leaves permanent black eyes",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 5,
+                "label": "How do you get rid of Doxys?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "By throwing them over a hedge",
+                        "correct": false
+                    },
+                    {
+                        "label": "With a good helping of magical pesticide",
+                        "correct": true
+                    },
+                    {
+                        "label": "With a paralysing spell",
+                        "correct": false
+                    },
+                    {
+                        "label": "Scrub them with a magic sponge",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 6,
+                "label": "What dead nest was discovered at 12 Grimmauld Place during a major spring clean?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Acromantula",
+                        "correct": false
+                    },
+                    {
+                        "label": "Nifflers",
+                        "correct": false
+                    },
+                    {
+                        "label": "Boggarts",
+                        "correct": false
+                    },
+                    {
+                        "label": "Puffskeins",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "number": 7,
+                "label": "What does Wartcap powder do?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Create painful boils",
+                        "correct": false
+                    },
+                    {
+                        "label": "Make skin turn into a hard crust",
+                        "correct": true
+                    },
+                    {
+                        "label": "Cures Spattergroit",
+                        "correct": false
+                    },
+                    {
+                        "label": "Give you a boost of intelligence",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 8,
+                "label": "Which of these isn't a Gilderoy Lockhart book?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Holiday with Hags",
+                        "correct": false
+                    },
+                    {
+                        "label": "Marauding with Monsters",
+                        "correct": false
+                    },
+                    {
+                        "label": "Absconding with Acromantula",
+                        "correct": true
+                    },
+                    {
+                        "label": "Voyaging with Vampires",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 9,
+                "label": "What is the one thing magic can't do when it comes to food?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Produce it out of thin air",
+                        "correct": true
+                    },
+                    {
+                        "label": "Transform it into something else",
+                        "correct": false
+                    },
+                    {
+                        "label": "Multiply it once it's made",
+                        "correct": false
+                    },
+                    {
+                        "label": "Summon it from somewhere",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 10,
+                "label": "Which of these Celestina Warbeck songs did Arthur and I dance to when they were teenagers?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "You Charmed the Heart Right Out of Me",
+                        "correct": false
+                    },
+                    {
+                        "label": "You Stole My Cauldron But You Can't Have My Heart",
+                        "correct": false
+                    },
+                    {
+                        "label": "Witch and Wizard's Wintry Wondrous Land",
+                        "correct": false
+                    },
+                    {
+                        "label": "A Cauldron Full of Hot, Strong Love",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "number": 11,
+                "label": "What nickname of mine should always have remained private?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Mollywolly",
+                        "correct": false
+                    },
+                    {
+                        "label": "Mollywobbles",
+                        "correct": true
+                    },
+                    {
+                        "label": "Mollywombat",
+                        "correct": false
+                    },
+                    {
+                        "label": "Mollywibbles",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 12,
+                "label": "What treasured possession does our Great Aunt Muriel lend to Fleur?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "An sapphire-laden diadem",
+                        "correct": false
+                    },
+                    {
+                        "label": "A Goblin-made tiara",
+                        "correct": true
+                    },
+                    {
+                        "label": "A golden bracelet that lures the wearer to sleep",
+                        "correct": false
+                    },
+                    {
+                        "label": "A glittering, cursed necklace",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 13,
+                "label": "What does the eldest Weasley do as a job?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Curse Breaker",
+                        "correct": true
+                    },
+                    {
+                        "label": "Joke shop owner",
+                        "correct": false
+                    },
+                    {
+                        "label": "Dragon expert",
+                        "correct": false
+                    },
+                    {
+                        "label": "Ministry official",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 14,
+                "label": "What is the perfect Christmas present?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "A knitted jumper",
+                        "correct": true
+                    },
+                    {
+                        "label": "A pet rat",
+                        "correct": false
+                    },
+                    {
+                        "label": "A new wand",
+                        "correct": false
+                    },
+                    {
+                        "label": "A new broomstick",
+                        "correct": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Complete The Quote Quiz: Severus Snape Edition",
+        "address": "https://www.wizardingworld.com/quiz/complete-the-quote-quiz-snape-edition",
+        "questions": [
+            {
+                "number": 1,
+                "label": "Tut, tut \u2013 fame clearly isn\u2019t...",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "going to help you",
+                        "correct": false
+                    },
+                    {
+                        "label": "what matters",
+                        "correct": false
+                    },
+                    {
+                        "label": "worth anything",
+                        "correct": false
+                    },
+                    {
+                        "label": "everything",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "number": 2,
+                "label": "\u2018Or maybe,\u2019 said a very cold voice right behind them, \u2018he\u2019s waiting to hear why you two didn\u2019t arrive on\u2026\u2019",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "the Hogwarts Express",
+                        "correct": false
+                    },
+                    {
+                        "label": "the correct side of the castle",
+                        "correct": false
+                    },
+                    {
+                        "label": "time",
+                        "correct": false
+                    },
+                    {
+                        "label": "the school train",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "number": 3,
+                "label": "\u2018The Dark Arts,\u2019 said Snape, \u2018are many, varied, ever-changing and \u2026\u2019",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "eternal",
+                        "correct": true
+                    },
+                    {
+                        "label": "indestructible",
+                        "correct": false
+                    },
+                    {
+                        "label": "perpetual",
+                        "correct": false
+                    },
+                    {
+                        "label": "everlasting",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 4,
+                "label": "You think a joke-shop could supply him with such a thing? You don\u2019t think it more likely that he got it directly from\u2026",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Prongs",
+                        "correct": false
+                    },
+                    {
+                        "label": "Moony himself",
+                        "correct": false
+                    },
+                    {
+                        "label": "the makers",
+                        "correct": false
+                    },
+                    {
+                        "label": "the manufacturers",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "number": 5,
+                "label": "I can teach you how to bottle fame, brew glory, even stopper\u2026",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "death",
+                        "correct": true
+                    },
+                    {
+                        "label": "breath",
+                        "correct": false
+                    },
+                    {
+                        "label": "memory",
+                        "correct": false
+                    },
+                    {
+                        "label": "life",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 6,
+                "label": "Yes, it is easy to see that nearly six years of magical education have not been wasted on you, Potter. Ghosts are\u2026",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "translucent",
+                        "correct": false
+                    },
+                    {
+                        "label": "opaque",
+                        "correct": false
+                    },
+                    {
+                        "label": "see-through",
+                        "correct": false
+                    },
+                    {
+                        "label": "transparent",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "number": 7,
+                "label": "\u2018That is the second time you have spoken out of turn, Miss Granger,\u2019 said Snape coolly. \u2018Five more points from Gryffindor for being an insufferable..\u2019",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "show off",
+                        "correct": false
+                    },
+                    {
+                        "label": "know-it-all",
+                        "correct": true
+                    },
+                    {
+                        "label": "boaster",
+                        "correct": false
+                    },
+                    {
+                        "label": "braggart",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 8,
+                "label": "But never \u2013 never tell, Dumbledore! This must be between us! Swear it! I cannot bear ... especially Potter\u2019s son ... I want\u2026",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "you to promise me",
+                        "correct": false
+                    },
+                    {
+                        "label": "your unbreakable vow",
+                        "correct": false
+                    },
+                    {
+                        "label": "you to swear it",
+                        "correct": false
+                    },
+                    {
+                        "label": "your word",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "number": 9,
+                "label": "Everything was supposed to be to keep Lily Potter\u2019s son safe. Now you tell me you have been raising him \u2026",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "like a lamb for slaughter",
+                        "correct": false
+                    },
+                    {
+                        "label": "like a pig for slaughter",
+                        "correct": true
+                    },
+                    {
+                        "label": "only to sacrifice him",
+                        "correct": false
+                    },
+                    {
+                        "label": "only to face death",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 10,
+                "label": "\u2018Would you like me to do it now?\u2019 asked Snape, his voice heavy with irony. \u2018Or would you like a few moments to\u2026\u2019",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "write your own obituary",
+                        "correct": false
+                    },
+                    {
+                        "label": "amend your will",
+                        "correct": false
+                    },
+                    {
+                        "label": "leave a note for Potter",
+                        "correct": false
+                    },
+                    {
+                        "label": "compose an epitaph",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "number": 11,
+                "label": "Your head is not allowed in Hogsmeade. No part of your body has permission to be\u2026",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "in the Three Broomsticks",
+                        "correct": false
+                    },
+                    {
+                        "label": "anywhere near the Shrieking Shack",
+                        "correct": false
+                    },
+                    {
+                        "label": "in Hogsmeade",
+                        "correct": true
+                    },
+                    {
+                        "label": "outside of the castle",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 12,
+                "label": "\u2018How extraordinarily like your father you are, Potter,\u2019 Snape said suddenly, his eyes glinting. \u2018He, too, was exceedingly\u2026\u2019",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "arrogant",
+                        "correct": true
+                    },
+                    {
+                        "label": "idiotic",
+                        "correct": false
+                    },
+                    {
+                        "label": "conceited",
+                        "correct": false
+                    },
+                    {
+                        "label": "vain",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 13,
+                "label": "\u2018Detention, Saturday night, my office,\u2019 said Snape. \u2018I do not take cheek from anyone, Potter ... not even\u2026\u2019",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "the Boy Who Lived",
+                        "correct": false
+                    },
+                    {
+                        "label": "the Chosen One",
+                        "correct": true
+                    },
+                    {
+                        "label": "Dumbledore\u2019s favourite",
+                        "correct": false
+                    },
+                    {
+                        "label": "the latest Hogwarts celebrity",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 14,
+                "label": "\u2018It\u2019s real for us,\u2019 said Snape. \u2018Not for her. But we\u2019ll get the letter,\u2026\u2019",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "we\u2019re going to Hogwarts",
+                        "correct": false
+                    },
+                    {
+                        "label": "you and me",
+                        "correct": true
+                    },
+                    {
+                        "label": "we\u2019re special",
+                        "correct": false
+                    },
+                    {
+                        "label": "we\u2019re actually magical",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 15,
+                "label": "The mind is a complex and many-layered thing, Potter \u2013 or at least\u2026",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "some are",
+                        "correct": false
+                    },
+                    {
+                        "label": "most minds are",
+                        "correct": true
+                    },
+                    {
+                        "label": "some students\u2019 are",
+                        "correct": false
+                    },
+                    {
+                        "label": "mine is",
+                        "correct": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "The Diagon Alley Quiz",
+        "address": "https://www.wizardingworld.com/quiz/diagon-alley-quiz",
+        "questions": [
+            {
+                "number": 1,
+                "label": "Upon tapping the wall that magically reveals Diagon Alley, what formation will lead to success?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "One up, one across",
+                        "correct": false
+                    },
+                    {
+                        "label": "Three up, two across",
+                        "correct": true
+                    },
+                    {
+                        "label": "Four up, one across",
+                        "correct": false
+                    },
+                    {
+                        "label": "Seven up, seven across",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 2,
+                "label": "Which of the following shops CANNOT be found in Diagon Alley?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Eeylops Owl Emporium",
+                        "correct": false
+                    },
+                    {
+                        "label": "Weasley\u2019s Wizard Wheezes",
+                        "correct": false
+                    },
+                    {
+                        "label": "Honeydukes",
+                        "correct": true
+                    },
+                    {
+                        "label": "Ollivanders",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 3,
+                "label": "What is the name of the barman who works at The Leaky Cauldron?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Tim",
+                        "correct": false
+                    },
+                    {
+                        "label": "Kenneth",
+                        "correct": false
+                    },
+                    {
+                        "label": "Tom",
+                        "correct": true
+                    },
+                    {
+                        "label": "Bill",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 4,
+                "label": "In the books, who is the first person to greet Harry in The Leaky Cauldron?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Doris Crockford",
+                        "correct": false
+                    },
+                    {
+                        "label": "Professor Quirrell",
+                        "correct": false
+                    },
+                    {
+                        "label": "Dedalus Diggle",
+                        "correct": false
+                    },
+                    {
+                        "label": "Tom the barman",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "number": 5,
+                "label": "Complete the line of the Gringotts poem: \u201cEnter, stranger, but take heed...\u201d",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "We know of every darkest deed",
+                        "correct": false
+                    },
+                    {
+                        "label": "Of what awaits the sin of greed",
+                        "correct": true
+                    },
+                    {
+                        "label": "Take only what you dearly need",
+                        "correct": false
+                    },
+                    {
+                        "label": "This verse you should take time to read",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 6,
+                "label": "In Diagon Alley, where would one pick up a broomstick?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "The High-Fliers Association",
+                        "correct": false
+                    },
+                    {
+                        "label": "Quidditch Supplies for Quality Players",
+                        "correct": false
+                    },
+                    {
+                        "label": "Quality Quidditch Supplies",
+                        "correct": true
+                    },
+                    {
+                        "label": "Bloomin\u2019 Brilliant Brooms",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 7,
+                "label": "When stocking the Monster Book of Monsters, the manager of Flourish and Blotts said they hadn\u2019t had that much trouble with a book since...",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Charm your own Cheese",
+                        "correct": false
+                    },
+                    {
+                        "label": "Magick Moste Evile",
+                        "correct": false
+                    },
+                    {
+                        "label": "The Invisible Book of Invisibility",
+                        "correct": true
+                    },
+                    {
+                        "label": "The Life and Lies of Albus Dumbledore",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 8,
+                "label": "Harry met his first fellow Hogwarts student at Madam Malkin\u2019s Robes for all Occasions. Who was it?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Draco Malfoy",
+                        "correct": true
+                    },
+                    {
+                        "label": "Neville Longbottom",
+                        "correct": false
+                    },
+                    {
+                        "label": "Ron Weasley",
+                        "correct": false
+                    },
+                    {
+                        "label": "Seamus Finnigan",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 9,
+                "label": "Florean Fortescue runs a popular shop in Diagon Alley. What is it?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "A sweet shop",
+                        "correct": false
+                    },
+                    {
+                        "label": "An ice cream parlour",
+                        "correct": true
+                    },
+                    {
+                        "label": "A joke shop",
+                        "correct": false
+                    },
+                    {
+                        "label": "A bookshop",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 10,
+                "label": "During Harry\u2019s first visit to the Magical Menagerie, which of the following eccentric animals did he see?",
+                "type": "checkbox",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "A golden, baby unicorn",
+                        "correct": false
+                    },
+                    {
+                        "label": "A jewel encrusted tortoise",
+                        "correct": true
+                    },
+                    {
+                        "label": "Poisonous orange snails",
+                        "correct": true
+                    },
+                    {
+                        "label": "Spotty flying slugs",
+                        "correct": false
+                    },
+                    {
+                        "label": "Enormous purple toads",
+                        "correct": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "The Yule Ball Quiz",
+        "address": "https://www.wizardingworld.com/quiz/yule-ball-quiz",
+        "questions": [
+            {
+                "number": 1,
+                "label": "What time did the Yule Ball begin?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Six o\u2019clock",
+                        "correct": false
+                    },
+                    {
+                        "label": "Nine o\u2019clock",
+                        "correct": false
+                    },
+                    {
+                        "label": "Seven o\u2019clock",
+                        "correct": false
+                    },
+                    {
+                        "label": "Eight o\u2019clock",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "number": 2,
+                "label": "Fleur Delacour was wearing robes of...",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Pale pink silk",
+                        "correct": false
+                    },
+                    {
+                        "label": "Red velvet",
+                        "correct": false
+                    },
+                    {
+                        "label": "Gold lam\u00e9",
+                        "correct": false
+                    },
+                    {
+                        "label": "Silver satin",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "number": 3,
+                "label": "Who was Malfoy\u2019s date?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Milicent Bulstrode",
+                        "correct": false
+                    },
+                    {
+                        "label": "Marietta Edgecombe",
+                        "correct": false
+                    },
+                    {
+                        "label": "Daphne Greengrass",
+                        "correct": false
+                    },
+                    {
+                        "label": "Pansy Parkinson",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "number": 4,
+                "label": "In the book, Hermione\u2019s dress was...",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Blue",
+                        "correct": true
+                    },
+                    {
+                        "label": "Pink",
+                        "correct": false
+                    },
+                    {
+                        "label": "Yellow",
+                        "correct": false
+                    },
+                    {
+                        "label": "Silver",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 5,
+                "label": "However, in the film, Hermione\u2019s dress was...",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Blue",
+                        "correct": false
+                    },
+                    {
+                        "label": "Pink",
+                        "correct": true
+                    },
+                    {
+                        "label": "White",
+                        "correct": false
+                    },
+                    {
+                        "label": "Gold",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 6,
+                "label": "Who was Cedric\u2019s date?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Padma Patil",
+                        "correct": false
+                    },
+                    {
+                        "label": "Susan Bones",
+                        "correct": false
+                    },
+                    {
+                        "label": "Lavender Brown",
+                        "correct": false
+                    },
+                    {
+                        "label": "Cho Chang",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "number": 7,
+                "label": "Which of the Triwizard Tournament judges was absent from the ball?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Barty Crouch",
+                        "correct": true
+                    },
+                    {
+                        "label": "Igor Karkaroff",
+                        "correct": false
+                    },
+                    {
+                        "label": "Ludo Bagman",
+                        "correct": false
+                    },
+                    {
+                        "label": "Madame Maxime",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 8,
+                "label": "What did Dumbledore order from the enchanted plates to show everyone how to order their food?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Cauliflower steaks",
+                        "correct": false
+                    },
+                    {
+                        "label": "Pork chops",
+                        "correct": true
+                    },
+                    {
+                        "label": "Roast chicken",
+                        "correct": false
+                    },
+                    {
+                        "label": "Salmon en croute",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 9,
+                "label": "During Ron and Hermione\u2019s argument, Ron called Viktor Krum...",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Krummy",
+                        "correct": false
+                    },
+                    {
+                        "label": "Krum Krum",
+                        "correct": false
+                    },
+                    {
+                        "label": "Vicky",
+                        "correct": true
+                    },
+                    {
+                        "label": "Loser",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 10,
+                "label": "Who complimented Harry on his strange socks from Dobby?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Ludo Bagman",
+                        "correct": false
+                    },
+                    {
+                        "label": "Cho Chang",
+                        "correct": false
+                    },
+                    {
+                        "label": "Percy Weasley",
+                        "correct": false
+                    },
+                    {
+                        "label": "Mad-Eye Moody",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "number": 11,
+                "label": "In the rose garden, how did Harry and Ron hide to avoid bumping into Hagrid and Madame Maxime?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "They hid behind a reindeer statue",
+                        "correct": true
+                    },
+                    {
+                        "label": "They cast a Disillusionment Charm",
+                        "correct": false
+                    },
+                    {
+                        "label": "They went under the Invisibility Cloak",
+                        "correct": false
+                    },
+                    {
+                        "label": "They crouched in the bushes",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 12,
+                "label": "And what did Hagrid reveal to Madame Maxime?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "That he got expelled",
+                        "correct": false
+                    },
+                    {
+                        "label": "That he had been to Azkaban",
+                        "correct": false
+                    },
+                    {
+                        "label": "That he was half-giant",
+                        "correct": true
+                    },
+                    {
+                        "label": "That he loved her",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 13,
+                "label": "What else did Harry and Ron have to avoid in the rose garden?",
+                "type": "checkbox",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Fred and George selling fake wands",
+                        "correct": false
+                    },
+                    {
+                        "label": "Fleur and Roger kissing",
+                        "correct": true
+                    },
+                    {
+                        "label": "Hermione and Krum kissing",
+                        "correct": false
+                    },
+                    {
+                        "label": "Snape and Karkaroff having a strange conversation",
+                        "correct": true
+                    },
+                    {
+                        "label": "Peeves causing general disruption",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 14,
+                "label": "What time did the Yule Ball finish?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Four in the morning",
+                        "correct": false
+                    },
+                    {
+                        "label": "Eleven o\u2019clock",
+                        "correct": false
+                    },
+                    {
+                        "label": "Midnight",
+                        "correct": true
+                    },
+                    {
+                        "label": "Ten o\u2019clock",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 15,
+                "label": "And back in the Gryffindor common room, Harry walked in on Hermione and Ron\u2019s blazing row, which ended with...",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Hermione telling Ron he should\u2019ve asked her to be his date",
+                        "correct": true
+                    },
+                    {
+                        "label": "Hermione attacking Ron with enchanted birds",
+                        "correct": false
+                    },
+                    {
+                        "label": "Ron confessing his love for Hermione",
+                        "correct": false
+                    },
+                    {
+                        "label": "Hermione and Ron kissing",
+                        "correct": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "The Festive Hogwarts Quiz ",
+        "address": "https://www.wizardingworld.com/quiz/festive-hogwarts-quiz",
+        "questions": [
+            {
+                "number": 1,
+                "label": "During Harry\u2019s first Hogwarts Christmas, who teaches him to play wizard chess?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Seamus",
+                        "correct": false
+                    },
+                    {
+                        "label": "Neville",
+                        "correct": false
+                    },
+                    {
+                        "label": "Ron",
+                        "correct": true
+                    },
+                    {
+                        "label": "Hermione",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 2,
+                "label": "Ron\u2019s Christmas jumpers are always...",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Maroon",
+                        "correct": true
+                    },
+                    {
+                        "label": "Magenta",
+                        "correct": false
+                    },
+                    {
+                        "label": "Burgundy",
+                        "correct": false
+                    },
+                    {
+                        "label": "Scarlet",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 3,
+                "label": "Dobby enjoyed wearing a tea cosy as a hat. But for Christmas, he gave it a festive decoration by tying a WHAT to it?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Reindeer ornament",
+                        "correct": false
+                    },
+                    {
+                        "label": "String of fairy lights",
+                        "correct": false
+                    },
+                    {
+                        "label": "Bauble",
+                        "correct": true
+                    },
+                    {
+                        "label": "Piece of tinsel",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 4,
+                "label": "In Prisoner of Azkaban, Sir Cadogan was spotted having a Christmas party with his pony, a few monks and...",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Violet",
+                        "correct": false
+                    },
+                    {
+                        "label": "The Fat Lady",
+                        "correct": false
+                    },
+                    {
+                        "label": "A mermaid",
+                        "correct": false
+                    },
+                    {
+                        "label": "Previous Headmasters of Hogwarts",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "number": 5,
+                "label": "During a modest Hogwarts Christmas lunch, what was the name of the nervous first year who was offered some chipolatas from Dumbledore?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Nigel",
+                        "correct": false
+                    },
+                    {
+                        "label": "Derek",
+                        "correct": true
+                    },
+                    {
+                        "label": "Dennis",
+                        "correct": false
+                    },
+                    {
+                        "label": "Colin",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 6,
+                "label": "What did Ron get Harry for Christmas in their second year?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Omnioculars",
+                        "correct": false
+                    },
+                    {
+                        "label": "A pack of Chocolate Frogs",
+                        "correct": false
+                    },
+                    {
+                        "label": "A Flying with the Cannons book",
+                        "correct": true
+                    },
+                    {
+                        "label": "A Broomstick Servicing Kit",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 7,
+                "label": "In Half-Blood Prince, what was The Fat Lady\u2019s festive common room password?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Fairy lights",
+                        "correct": false
+                    },
+                    {
+                        "label": "Baubles",
+                        "correct": true
+                    },
+                    {
+                        "label": "Crackers",
+                        "correct": false
+                    },
+                    {
+                        "label": "Glitter",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 8,
+                "label": "Who did Professor Slughorn introduce Harry to at his Christmas party?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "The Weird Sisters",
+                        "correct": false
+                    },
+                    {
+                        "label": "Eldred Worple",
+                        "correct": true
+                    },
+                    {
+                        "label": "Rufus Scrimgeour",
+                        "correct": false
+                    },
+                    {
+                        "label": "Dedalus Diggle",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 9,
+                "label": "In Order of the Phoenix, Harry has a strange dream where he\u2019s decorating the DA room with baubles shaped like...",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Dobby\u2019s head",
+                        "correct": true
+                    },
+                    {
+                        "label": "Pygmy Puffs",
+                        "correct": false
+                    },
+                    {
+                        "label": "Quaffles",
+                        "correct": false
+                    },
+                    {
+                        "label": "Remembralls",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 10,
+                "label": "While trying to put up some Christmas decorations, Ron has to deal with Peeves...",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Pouring gravy around the corridors",
+                        "correct": false
+                    },
+                    {
+                        "label": "Singing Christmas carols out-of-tune",
+                        "correct": false
+                    },
+                    {
+                        "label": "Trying to strangle him with tinsel",
+                        "correct": true
+                    },
+                    {
+                        "label": "Knocking down Christmas trees",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 11,
+                "label": "During the Yule Ball, who is Professor McGonagall seen dancing with?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Ludo Bagman",
+                        "correct": true
+                    },
+                    {
+                        "label": "Mad-Eye Moody",
+                        "correct": false
+                    },
+                    {
+                        "label": "Igor Karkaroff",
+                        "correct": false
+                    },
+                    {
+                        "label": "Professor Dumbledore",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 12,
+                "label": "In Goblet of Fire, the suits of armour were bewitched to sing which Christmas carol?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Joy to the World",
+                        "correct": false
+                    },
+                    {
+                        "label": "Oh Come All Ye Faithful",
+                        "correct": true
+                    },
+                    {
+                        "label": "In the Bleak Midwinter",
+                        "correct": false
+                    },
+                    {
+                        "label": "O Holy Night",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 13,
+                "label": "During his introduction to wizard crackers and their fantastic prizes, which of the following items does Harry end up with?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "A grow-your-own-warts kit",
+                        "correct": true
+                    },
+                    {
+                        "label": "Spellotape",
+                        "correct": false
+                    },
+                    {
+                        "label": "A Remembrall",
+                        "correct": false
+                    },
+                    {
+                        "label": "A pack of Dr Filibuster\u2019s fireworks",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 14,
+                "label": "Dobby gets Harry some (you guessed it) socks for Christmas in his fourth year. What patterns are on the mismatched socks?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Brooms and Snitches",
+                        "correct": true
+                    },
+                    {
+                        "label": "Stars and Christmas puddings",
+                        "correct": false
+                    },
+                    {
+                        "label": "Stripes and spots",
+                        "correct": false
+                    },
+                    {
+                        "label": "Wands and wizard hats",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "number": 15,
+                "label": "And finally, who does Hermione end up taking as a date to Slughorn\u2019s Christmas party?",
+                "type": "radio",
+                "style": "text",
+                "answers": [
+                    {
+                        "label": "Dean Thomas",
+                        "correct": false
+                    },
+                    {
+                        "label": "Neville Longbottom",
+                        "correct": false
+                    },
+                    {
+                        "label": "Seamus Finnigan",
+                        "correct": false
+                    },
+                    {
+                        "label": "Cormac McLaggen",
+                        "correct": true
                     }
                 ]
             }

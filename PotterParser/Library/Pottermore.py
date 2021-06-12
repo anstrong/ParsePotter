@@ -1,5 +1,6 @@
 from .Webpages import *
 from .QuizObjects import *
+from .Failure import *
 import re
 import json
 
@@ -36,14 +37,19 @@ class Pottermore():
         with open("Results/PottermoreQuizzes.json") as file:
             data = json.load(file)
             data.append(new.__dict__())
+            #json.dump(data, file, indent=4)
             file.close()
 
-        with open("Results/PottermoreQuizzes.json", 'w') as f:
-            json.dump(data, f, indent=4)
+        #with open("Results/PottermoreQuizzes.json", 'w') as f:
+            #json.dump(data, f, indent=4)
 
     def add_quiz(self, address):
         try:
             new_quiz = Quiz(address)
+
+        except AttributeError as error:
+            print(error)
+            return
 
         except:
             print(f"{address} couldn't be loaded")
