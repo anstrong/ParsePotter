@@ -1,4 +1,10 @@
-from .Parseable import Searchable
+import time
+
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.keys import Keys
+from webdriver_manager.chrome import ChromeDriverManager
+
 
 class HTMLItem():
     def __init__(self, key1, key2, buff1, buff2):
@@ -12,45 +18,44 @@ class HTMLItem():
         self.stop = text.find(self.end) - self.backBuffer
         return text[self.begin:self.stop]
 
-class CSVItem():
-    def __init__(self, text, delimiter):
-        self.delimiter = delimiter
-        self.text = text
+class Webpage():
+    chrome_options = Options()
+    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--no-sandbox")
+    driver = webdriver.Chrome(ChromeDriverManager().install(), options=chrome_options)
 
-    def extract_num(self):
-        index = 0
-        text = self.text
-        for i in range (0, self.num-1):
-            text = text[text.find(self.delimiter):]
-        index = text.find(self.delimiter)
-        return text[:index]
+    def __init__(self, address):
+        self.address = address
+        #print(self.__str__())
 
-class CSV():
-    def __init__(self, text):
-        self.text = text
+        self.driver = Webpage.driver
+        self.driver.get(self.address)
+        self.driver.implicitly_wait(2)
 
-    def extract(self, text = "", delimiter = ","):
-        if text == "":
-            text = self.text
+    def make_visible(self, class_name, wrapper = ""):
+        try:
+            if wrapper == "":
+                wrapper = Webpage.driver
+            element = wrapper.find_element_by_class_name(class_name)
+            Webpage.driver.execute_script("arguments[0].setAttribute('style','visibility:visible;');", element)
+            return element
+        except:
+            #Webpage.driver.refresh()
+            print(f"{class_name} not found on {self.address}")
 
-        items = []
-        num_items = text.count(delimiter)
+    def refresh(self):
+        self.driver.get(self.address)
 
-        for i in range (0, num_items):
-            if(text.find(delimiter) != -1):
-                index = text.find(delimiter)
-                str = text[:index]
-                text = text[index+1:]
-            else:
-                str = text
+    def scroll(self):
+        self.driver.find_element_by_tag_name('body').send_keys(Keys.END)
+        time.sleep(1)
+        self.driver.execute_script("window.scrollBy(0, -500);")
+        time.sleep(.5)
+        return self.driver.execute_script("return document.body.scrollHeight")
 
-            if (str.count(",") > 0):
-                str = self.extract(str, ",")
-            elif (str.count(";") > 0):
-                str = self.extract(str, ";")
-            else:
-                str = str.replace("&#44", ",")
+    def __str__(self):
+        return self.address
 
-            items.append(str)
+    def __repr__(self):
+        return self.address
 
-        return items

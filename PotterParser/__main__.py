@@ -1,5 +1,4 @@
-from PotterParser import app
-from .Library import *
+from Library import Pottermore
     
 def webTest4():
     site = Pottermore()

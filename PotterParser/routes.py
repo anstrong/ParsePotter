@@ -3,20 +3,10 @@ import random
 from PotterParser import app
 from flask import jsonify, request
 
+DB = MongoDatabase(USER, PASS)
+
 def get_quiz_with_attr(field, value):
-    results = []
-    with open("Results/PottermoreQuizzes.json") as file:
-        quizzes = json.load(file)
-        file.close()
-
-    if(value != '*'):
-        for quiz in quizzes:
-            if quiz[field] == value:
-                results.append(quiz)
-    else:
-        results = quizzes
-
-    return results
+    return jsonify(DB.find_one)
 
 @app.route('/')
 @app.route('/index')
@@ -24,10 +14,7 @@ def index():
     return "Welcome to the Quibble API!"
 
 def get_json_data():
-    with open("Results/PottermoreQuizzes.json") as file:
-        data = json.load(file)
-        file.close()
-    return data
+    print("TODO")
 
 @app.route('/quizzes',  methods=['GET'])
 @app.route('/quizzes/',  methods=['GET'])
@@ -80,17 +67,11 @@ def get_random_question():
 
 @app.route('/addresses/all',  methods=['GET'])
 def get_addresses():
-    with open("Results/QuizList.csv", 'r+') as file:
-        links = file.read().splitlines()
-        file.close()
-    return jsonify(links)
+    print("TODO")
 
 @app.route('/addresses/parsed',  methods=['GET'])
 def get_parsed():
-    with open("Results/ParsedQuizList.csv", 'r+') as file:
-        links = file.read().splitlines()
-        file.close()
-    return jsonify(links)
+    print("TODO")
 
 if __name__ == '__main__':
     app.run()

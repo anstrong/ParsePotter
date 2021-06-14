@@ -1,8 +1,14 @@
-import os
-from .Webpages import *
 import json
+import os
 
-pause_time = 1
+from progressbar import progressbar
+from bs4 import BeautifulSoup
+
+from .WebItems import *
+from .Services import *
+
+pause_time = .5
+DB = MongoDatabase("ALS", "ark93t37")
 
 class Quiz():
     template = json.load(open(os.path.abspath("template.json"), "r"))["quiz"]
@@ -10,10 +16,12 @@ class Quiz():
     def __init__(self, address):
         self.address = address
         self.parse_data()
+        self.update()
 
     def parse_data(self):
         self.page = self.load(self.address)
         self.num_questions = self.get_num_questions()
+        self.quizID = self.upload()
         self.questions = self.get_questions()
 
     def load(self, address):
@@ -47,53 +55,45 @@ class Quiz():
     def get_questions(self):
         questions = []
         Question.number = 0
-        for i in range(0, self.num_questions):
-            print(f"\b\b\b\b\b{i+1}/{self.num_questions}")
+        for i in progressbar(range(self.num_questions), redirect_stdout=True):
             self.next()
-            question = Question(self.page)
-            questions.append(question)
-
+            question = Question(self.page, self.quizID)
+            questions.append(question.update())
         return questions
 
     def next(self):
         self.page.driver.find_element_by_tag_name("button").click()
         self.page.driver.implicitly_wait(pause_time)
 
-    def restart(self):
-        print(f"Reparsing {self.title}")
-        self.__init__(self.title, self.address)
-
-    def __str__(self):
-        result = self.title
-        for question in self.questions:
-            result += "\n\t" + str(question)
-        return result
-        #return self.title
-
-    def __dict__(self):
-        question_list = []
-        for question in self.questions:
-            question_list.append(question.__dict__())
-
-        return {
+    def upload(self):
+        uploaded_quiz = DB.quizzes().insert_one({
             "title": self.title,
             "address": self.address,
-            "questions": question_list
-        }
+            "questions": [],
+            "complete": False
+        })
+        return uploaded_quiz.inserted_id
 
-
+    def update(self):
+        updated_quiz = DB.quizzes().update_one({'_id': self.quizID}, {
+            '$set': {"questions": self.questions, "complete": True}
+        })
 
 class Question():
     number = 0
     template = json.load(open(os.path.abspath("template.json"), "r"))["quiz"]["question"]
 
-    def __init__(self, page = ""):
+    def __init__(self, page = "", quizID=0):
         Question.number += 1
         self.num = Question.number
+        self.quizID = quizID
         if page != "":
             self.page = page
             self.question = self.get_question()
+            self.questionID = self.upload()
             self.answers = self.get_answers()
+        else:
+            print("Question not found")
 
     def get_answers(self):
         self.answer_type = "radio"
@@ -110,7 +110,6 @@ class Question():
         type_attr = type_tag.get_attribute(answer["type"]["attribute"])
         for option in answer["type"]["options"]:
             if type_attr == option["label"]:
-                #self.question += option["prompt"]
                 self.answer_type = option["label"]
                 for button in option["clickables"]:
                     self.page.driver.find_element_by_tag_name(button).click()
@@ -127,9 +126,8 @@ class Question():
         answers = HTML(answer["label"]["tag"], attrs={'class': answer["label"]["class"]})
         result = []
         for option in answers:
-            answer = Answer(option)
-            result.append(answer)
-            #print(str(answer))
+            answer = Answer(option,self.questionID)
+            result.append(answer.upload())
         self.answers = result
         return result
 
@@ -140,40 +138,38 @@ class Question():
         text = HTML.find(self.template["titleContent"]["title"]["tag"], attrs={'class': self.template["titleContent"]["title"]["class"]})
         return text.get_text()
 
-    def __str__(self):
-        result = ""
-        result += self.question
-        for answer in self.answers:
-            result += "\n\t\t" + str(answer)
-        return result
-
-    def __dict__(self):
-        answer_list = []
-        for answer in self.answers:
-            answer_list.append(answer.__dict__())
-
-        return {
+    def upload(self):
+        uploaded_question = DB.questions().insert_one({
+            "quiz": self.quizID,
             "number": self.num,
             "label": self.question,
-            "type": self.answer_type,
-            "style": self.answer_style,
-            "answers": answer_list
-        }
+            "type": "",
+            "style": "",
+            "answers": []
+        })
+        return uploaded_question.inserted_id
+
+    def update(self):
+        updated_question = DB.questions().update_one({'_id': self.questionID}, {
+            '$set': {"type": self.answer_type, "style": self.answer_style, "answers": self.answers}
+        })
+        return self.questionID
 
 
 class Answer():
-    def __init__(self, chunk = ""):
+    def __init__(self, chunk = "", questionID=0):
+        self.questionID = questionID
         if chunk != "":
             self.label = chunk.getText()
             self.correct = (chunk.prettify().find("is-incorrect") == -1)
         else:
             print("Answer not found")
 
-    def __str__(self):
-        return str(f'{self.label}: {self.correct}')
-
-    def __dict__(self):
-        return {
+    def upload(self):
+        uploaded_answer = DB.answers().insert_one({
+            "question": self.questionID,
             "label": self.label,
             "correct": self.correct
-        }
+        })
+        return uploaded_answer.inserted_id
+
