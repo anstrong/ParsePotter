@@ -3,7 +3,7 @@ import random
 from PotterParser import app
 from flask import jsonify, request
 
-DB = MongoDatabase(USER, PASS)
+DB = MongoDatabase()
 
 def get_quiz_with_attr(field, value):
     return jsonify(DB.find_one)

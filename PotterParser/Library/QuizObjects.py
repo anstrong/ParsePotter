@@ -8,7 +8,7 @@ from .WebItems import *
 from .Services import *
 
 pause_time = .5
-DB = MongoDatabase("ALS", "ark93t37")
+DB = MongoDatabase()
 
 class Quiz():
     template = json.load(open(os.path.abspath("template.json"), "r"))["quiz"]

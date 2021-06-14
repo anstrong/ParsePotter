@@ -1,4 +1,5 @@
 import re
+import os
 
 from progress.bar import IncrementalBar
 from progress.counter import Counter
@@ -7,7 +8,7 @@ from bs4 import BeautifulSoup
 from .QuizObjects import *
 from .Services import *
 
-DB = MongoDatabase("ALS", "ark93t37")
+DB = MongoDatabase()
 
 class Pottermore():
     link_item = HTMLItem("href=", "title", 6, 2)

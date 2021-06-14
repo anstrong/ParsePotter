@@ -1,10 +1,11 @@
 from pymongo import MongoClient
 from itertools import chain
 from progress.bar import IncrementalBar
+import os
 
 class MongoDatabase():
-    def __init__(self, user, password):
-        MONGODB_URI = f'mongodb+srv://{user}:{password}@quibblecluster.qmsof.mongodb.net/test'
+    def __init__(self):
+        MONGODB_URI = f'mongodb+srv://{os.environ.get("MONGO_USER")}:{os.environ.get("MONGO_PASS")}@quibblecluster.qmsof.mongodb.net/test'
         client = MongoClient(MONGODB_URI)
         QuibbleDB = client['QuibbleDB']
         self.answerDB = QuibbleDB['Answers']
