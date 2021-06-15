@@ -12,6 +12,7 @@ class MongoDatabase():
         self.questionDB = QuibbleDB['Questions']
         self.quizDB = QuibbleDB["Quizzes"]
 
+    ## Collection getters
     def quizzes(self):
         return self.quizDB
 
@@ -21,21 +22,35 @@ class MongoDatabase():
     def answers(self):
         return self.answerDB
 
+    ## Record getters
+    def get_all(self, collection):
+        return collection.find({})
+
+    def get_unparsed(self):
+        unparsed = self.quizDB.find({"complete": False})
+        record_list = []
+        for i in range(1, unparsed.count()):
+            record = unparsed.next()
+            record_list.append(record["_id"])
+        return record_list
+
+    ## Exists checkers
+    def record_exists(self, collection, attr="", value=""):
+        return self.find_one(collection, attr, value) is not None
+
+    def quiz_exists(self, attr="", value=""):
+        return self.record_exists(self.quizDB, attr, value)
+
+    ## Finders
     def find_one(self, collection, attr = "", value = ""):
-        collection.find_one({attr: value})
+        return collection.find_one({attr: value})
 
     def find_all(self, collection, attr = "", value = ""):
-        collection.find({attr: value})
+        return collection.find({attr: value})
 
     def find_quiz(self, attr = "", value = ""):
         #print(f'{attr}:{value}')
         return self.find_all(self.quizDB, attr, value)
-
-    def quiz_exists(self, attr="", value=""):
-        #quizzes = self.find_quiz(attr, value)
-        #print(f'\n{quizzes}')
-        #return self.find_one(self.quizDB, attr, value)
-        return self.quizDB.find_one({"address": value}) is not None
 
     def find_question(self, attr = "", value = ""):
         return self.find_one(self.questionDB, attr, value)
@@ -43,8 +58,15 @@ class MongoDatabase():
     def find_answer(self, attr = "", value = ""):
         return self.find_one(self.answerDB, attr, value)
 
+    ## Removers
     def remove(self, collection, id):
         collection.delete_one({"_id": id})
+
+    def remove_question(self, id):
+        question = self.questionDB.find_one({"_id": id})
+        for answer in question["answers"]:
+            self.remove(self.answerDB, answer)
+        self.remove(self.questionDB, id)
 
     def remove_quiz(self, id):
         quiz = self.quizDB.find_one({"_id": id})
@@ -52,34 +74,30 @@ class MongoDatabase():
             self.remove_question(question)
         self.remove(self.quizDB, id)
 
-    def remove_question(self, id):
-        question = self.questionDB.find_one({"_id": id})
-        for answer in question["answers"]:
-            self.remove(self.answerDB, answer)
-        self.remove(self.questionDB, question)
+    def remove_quizzes(self, quiz_list):
+        bar = IncrementalBar('Removing Quizzes', max=len(quiz_list))
+        for quiz in quiz_list:
+            self.remove_quiz(quiz)
+            bar.next()
+        bar.finish()
 
-    def check_duplicates(self, collection, attr = ""): # needs testing
-        unique_records = len(collection.distinct(attr))
-        total_records = collection.count_documents()
-        return unique_records == total_records
+    def empty_collection(self, collection, record_type):
+        records = self.get_all(collection)
+        bar = IncrementalBar(f'Removing {record_type}', max=records.count())
+        for i in range(records.count()):
+            record = records.next()
+            self.remove(collection, record["_id"])
+            bar.next()
+        bar.finish()
 
-    def list_duplicates(self, collection, attr = ""): # inelegant; currently unused
-        duplicates = []
-        recorded = []
-        records = collection.find({})
-        for record in records:
-            if record not in recorded:
-                duplicate_records = collection.find({attr: record[attr]})
-                if duplicate_records.count() > 1:
-                    duplicate_docs = list(duplicate_records)
-                    print(duplicate_docs)
-                    for d in range (duplicate_records.count()):
-                        id = duplicate_docs[d]['_id']
-                        recorded.append(id)
-                    duplicates.append(duplicate_docs)
-                    #print(duplicate_records.list())
-                    #recorded = list(chain.from_iterable(duplicates))
-        return duplicates
+    def remove_all(self):
+        self.empty_collection(self.answerDB,"Answers")
+        self.empty_collection(self.questionDB,"Questions")
+        self.empty_collection(self.quizDB, "Quizzes")
+
+    ## Duplication validators
+    def has_duplicates(self, collection, attr = ""):
+        return len(self.find_duplicated) is not 0
 
     def find_duplicated(self, collection, attr=""):
         issue_list = []
@@ -88,7 +106,6 @@ class MongoDatabase():
             {'$group': {'_id': attr, 'count': {'$sum': 1}}},
             {'$match': {'count': {'$gt': 1}}}
         ])
-
         for document in name_cursor:
             name = document['_id']
             issue_list.append(name)
@@ -114,13 +131,72 @@ class MongoDatabase():
             bar.next()
         bar.finish()
 
-    def get_unparsed(self):
-        unparsed = self.quizDB.find({"complete": False})
-        record_list = []
-        for i in range(1, unparsed.count()):
-            record = unparsed.next()
-            record_list.append(record["title"])
-        return record_list
+    ## Integrity validators
+    def validate_children(self, record, child_collection, list_name):
+        issue_list = []
+        for child in record[list_name]:
+            if not self.record_exists(child_collection, "_id", child):
+                issue_list.append(child)
+        return issue_list
+
+    def validate_parent(self, record, parent_collection, attr_name):
+        issue_list = []
+        if not self.record_exists(parent_collection, "_id", record[attr_name]):
+            issue_list.append(record[attr_name])
+        return issue_list
+
+    def validate_links(self, collection, collection_name):
+        issue_list = []
+        records = self.get_all(collection)
+        bar = IncrementalBar(f'Validating {collection_name}', max=records.count())
+        for i in range(records.count()):
+            record = records.next()
+            if (collection is self.quizDB) and record["complete"]:
+                broken_c_links = self.validate_children(record, self.questionDB, "questions")
+                if len(broken_c_links) is not 0:
+                    issue_list.append(record["_id"])
+            elif collection is self.questionDB:
+                broken_c_links = self.validate_children(record, self.answerDB, "answers")
+                broken_p_links = self.validate_parent(record, self.quizDB, "quiz")
+                if (len(broken_c_links) is not 0) or (len(broken_p_links) is not 0):
+                    issue_list.append(record["_id"])
+            elif collection is self.answerDB:
+                broken_p_links = self.validate_parent(record, self.questionDB, "question")
+                if len(broken_p_links) is not 0:
+                    issue_list.append(record["_id"])
+            bar.next()
+        bar.finish()
+        return issue_list#list(chain(*issue_list))
+
+    def validate_answers(self):
+        return self.validate_links(self.answerDB, "Answers")
+
+    def validate_questions(self):
+        return self.validate_links(self.questionDB, "Questions")
+
+    def validate_quizzes(self):
+        return self.validate_links(self.quizDB, "Quizzes")
+
+    def validate_all(self):
+        issue_list = []
+        issue_list.append(self.validate_answers())
+        issue_list.append(self.validate_questions())
+        issue_list.append(self.validate_quizzes())
+        return issue_list
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

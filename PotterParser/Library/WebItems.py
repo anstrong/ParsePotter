@@ -30,7 +30,7 @@ class Webpage():
 
         self.driver = Webpage.driver
         self.driver.get(self.address)
-        self.driver.implicitly_wait(2)
+        self.driver.implicitly_wait(1)
 
     def make_visible(self, class_name, wrapper = ""):
         try:
@@ -52,6 +52,10 @@ class Webpage():
         self.driver.execute_script("window.scrollBy(0, -500);")
         time.sleep(.5)
         return self.driver.execute_script("return document.body.scrollHeight")
+
+    def quit(self):
+        self.driver.close()
+        self.driver.quit()
 
     def __str__(self):
         return self.address

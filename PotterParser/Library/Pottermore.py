@@ -1,6 +1,7 @@
 import re
 import os
 
+from progressbar import progressbar
 from progress.bar import IncrementalBar
 from progress.counter import Counter
 from bs4 import BeautifulSoup
@@ -18,24 +19,16 @@ class Pottermore():
 
     def __init__(self):
         self.address = "https://www.wizardingworld.com/quiz"
-        self.page = Webpage(self.address)
+        #self.page = Webpage(self.address)
         self.quizzes = []
         self.addresses = []
 
-        #print(DB.quiz_exists("address","https://www.wizardingworld.com/quiz/how-well-know-books-of-hogwarts-library"))
+        #self.update_list()
+        #self.parse_quizzes()
 
-        self.update_list()
-        self.parse_quizzes()
+        print(DB.validate_all())
 
-        #print(DB.get_unparsed())
-
-        #print(DB.list_duplicates(DB.quizzes(), "address"))
-        #print(DB.find_duplicated(DB.quizzes(), "address"))
-        DB.remove_all_duplicates(DB.quizzes(), "address")
-        #DB.remove_duplicates(DB.quizzes(),"address", "https://www.wizardingworld.com/quiz/weasleys-wizard-wheezes-quiz")
-        #print(DB.find_duplicated(DB.quizzes(), "address"))
-
-        self.page.driver.quit()
+        #self.page.quit()
 
     def update_list(self):
         #self.spinner = Spinner('Searching for new quizzes ')
@@ -62,14 +55,20 @@ class Pottermore():
             self.get_links()
 
     def parse_quizzes(self):
-        #print(self.addresses)
-        bar = IncrementalBar('Parsing Quizzes', max=len(self.addresses))
-        for address in self.addresses:
+        # bar = IncrementalBar('Parsing Quizzes', max=len(self.addresses))
+        # for address in self.addresses:
+        #     try:
+        #         Quiz(address)
+        #         bar.next()
+        #     except:
+        #         print(f'{address} could not be parsed.')
+        # bar.finish()
+
+        for i in progressbar(range(len(self.addresses)), redirect_stdout=True):
+            address = self.addresses[i]
             try:
                 Quiz(address)
-                bar.next()
             except:
                 print(f'{address} could not be parsed.')
-        bar.finish()
 
 

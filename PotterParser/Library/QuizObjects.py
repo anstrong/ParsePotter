@@ -23,6 +23,7 @@ class Quiz():
         self.num_questions = self.get_num_questions()
         self.quizID = self.upload()
         self.questions = self.get_questions()
+        self.page.quit()
 
     def load(self, address):
         homepage = Webpage(address)
@@ -55,7 +56,7 @@ class Quiz():
     def get_questions(self):
         questions = []
         Question.number = 0
-        for i in progressbar(range(self.num_questions), redirect_stdout=True):
+        for i in range(self.num_questions):#for i in progressbar(range(self.num_questions), redirect_stdout=True):
             self.next()
             question = Question(self.page, self.quizID)
             questions.append(question.update())
@@ -83,17 +84,18 @@ class Question():
     number = 0
     template = json.load(open(os.path.abspath("template.json"), "r"))["quiz"]["question"]
 
-    def __init__(self, page = "", quizID=0):
+    def __init__(self, page = None, quizID=0):
         Question.number += 1
         self.num = Question.number
         self.quizID = quizID
-        if page != "":
+        if page is not None:
             self.page = page
             self.question = self.get_question()
             self.questionID = self.upload()
             self.answers = self.get_answers()
         else:
             print("Question not found")
+        self.page.quit()
 
     def get_answers(self):
         self.answer_type = "radio"
