@@ -14,7 +14,7 @@ DB = Services.MongoDatabase(os.environ.get("MONGO_USER"),os.environ.get("MONGO_P
 if __name__ == '__main__':
     #app.debug = True
     # Bind to PORT if defined, otherwise default to 5000.
-    port = int(os.environ.get('PORT', 5000))
+    port = int(os.environ.get('PORT', 33507))
     app.run(host='0.0.0.0', port=port)
 
 def clean(data):
