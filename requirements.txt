@@ -1,4 +1,5 @@
 Flask
 bson
 pymongo
+pymongo[srv]
 progress
