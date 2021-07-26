@@ -1,6 +1,6 @@
 Flask
 bson
 pymongo
-pymongo-srv
+dnspython
 progress
 python-dotenv
