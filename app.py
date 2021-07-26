@@ -7,14 +7,14 @@ import os
 import Services
 
 app = Flask(__name__)
-app.config["DEBUG"] = True
+#app.config["DEBUG"] = True
 
 DB = Services.MongoDatabase(os.environ.get("MONGO_USER"),os.environ.get("MONGO_PASS"))
 
 if __name__ == '__main__':
     #app.debug = True
     # Bind to PORT if defined, otherwise default to 5000.
-    port = int(os.environ.get('PORT', 33507))
+    port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port)
 
 def clean(data):
