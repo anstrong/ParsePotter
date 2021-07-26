@@ -1,7 +1,9 @@
+import os
+
 from pymongo import MongoClient
 from itertools import chain
 from progress.bar import IncrementalBar
-import os
+from bson import objectid
 
 class MongoDatabase():
     def __init__(self):
@@ -26,36 +28,61 @@ class MongoDatabase():
     def get_all(self, collection):
         return collection.find({})
 
-    def get_unparsed(self):
-        unparsed = self.quizDB.find({"complete": False})
+    def get_all_json(self, collection):
+        records = self.get_all(collection)
         record_list = []
-        for i in range(1, unparsed.count()):
-            record = unparsed.next()
-            record_list.append(record["_id"])
+        for i in range(0, records.count()):
+            record = records.next()
+            record_list.append(record)
         return record_list
 
-    ## Exists checkers
-    def record_exists(self, collection, attr="", value=""):
+    def get_record_list(self, collection, attr="_id", value="", format="_id"):
+        records = collection.find({attr: value})
+        record_list = []
+        for i in range(0, records.count()):
+            record = records.next()
+            record_list.append(record[format])
+        return record_list
+
+    def get_all_unparsed(self):
+        return self.get_record_list(self.quizDB, "complete", False, "address")
+
+    def get_unparsed(self):
+        records = self.quizzes().find({"complete": False, "omit": False})
+        record_list = []
+        for i in range(0, records.count()):
+            record = records.next()
+            record_list.append(record["address"])
+        return record_list
+
+    def get_attr(self, collection, search_attr="label", value = "", target_attr="_id"):
+        return collection.find_one({search_attr: value})[target_attr]
+
+    ##  Pre-Checks
+    def record_exists(self, collection, attr="_id", value=""):
         return self.find_one(collection, attr, value) is not None
 
-    def quiz_exists(self, attr="", value=""):
+    def quiz_exists(self, attr="_id", value=""):
         return self.record_exists(self.quizDB, attr, value)
 
-    ## Finders
-    def find_one(self, collection, attr = "", value = ""):
+    def quiz_omitted(self, attr="_id", value=""):
+        return self.find_quiz(attr, value)["omit"]
+
+
+    ## Record Finders
+    def find_one(self, collection, attr = "_id", value = ""):
         return collection.find_one({attr: value})
 
-    def find_all(self, collection, attr = "", value = ""):
+    def find_all(self, collection, attr = "_id", value = ""):
         return collection.find({attr: value})
 
-    def find_quiz(self, attr = "", value = ""):
-        #print(f'{attr}:{value}')
-        return self.find_all(self.quizDB, attr, value)
+    def find_quiz(self, attr = "_id", value = ""):
+        return self.find_one(self.quizDB, attr, value)
 
-    def find_question(self, attr = "", value = ""):
+    def find_question(self, attr = "_id", value = ""):
         return self.find_one(self.questionDB, attr, value)
 
-    def find_answer(self, attr = "", value = ""):
+    def find_answer(self, attr = "_id", value = ""):
         return self.find_one(self.answerDB, attr, value)
 
     ## Removers
@@ -63,14 +90,14 @@ class MongoDatabase():
         collection.delete_one({"_id": id})
 
     def remove_question(self, id):
-        question = self.questionDB.find_one({"_id": id})
-        for answer in question["answers"]:
+        answers = self.get_attr(self.questionDB, "_id", id, "answers")
+        for answer in answers:
             self.remove(self.answerDB, answer)
         self.remove(self.questionDB, id)
 
     def remove_quiz(self, id):
-        quiz = self.quizDB.find_one({"_id": id})
-        for question in quiz["questions"]:
+        questions = self.get_attr(self.quizDB, "_id", id, "questions")
+        for question in questions:
             self.remove_question(question)
         self.remove(self.quizDB, id)
 
@@ -93,13 +120,13 @@ class MongoDatabase():
     def remove_all(self):
         self.empty_collection(self.answerDB,"Answers")
         self.empty_collection(self.questionDB,"Questions")
-        self.empty_collection(self.quizDB, "Quizzes")
+        self.empty_collection(self.quizDB,"Quizzes")
 
     ## Duplication validators
-    def has_duplicates(self, collection, attr = ""):
-        return len(self.find_duplicated) is not 0
+    def has_duplicates(self, collection, attr = "label"):
+        return len(self.find_duplicated(collection,attr)) is not 0
 
-    def find_duplicated(self, collection, attr=""):
+    def find_duplicated(self, collection, attr="label"):
         issue_list = []
         attr = f'${attr}'
         name_cursor = collection.aggregate([
@@ -109,11 +136,10 @@ class MongoDatabase():
         for document in name_cursor:
             name = document['_id']
             issue_list.append(name)
-            # print(name)
         return issue_list
 
-    def remove_duplicates(self, collection, attr = "", value = ""):
-        duplicates = collection.find({attr: value})
+    def remove_duplicates(self, collection, attr = "label", value = ""):
+        duplicates = self.find_all(collection, attr, value)
         for i in range(1, duplicates.count()):
             record = duplicates.next()
             if collection is self.quizDB:
@@ -123,7 +149,7 @@ class MongoDatabase():
             else:
                 self.remove(collection, record["_id"])
 
-    def remove_all_duplicates(self, collection, attr=""):
+    def remove_all_duplicates(self, collection, attr="label"):
         duplicated = self.find_duplicated(collection, attr)
         bar = IncrementalBar('Removing Duplicates', max=len(duplicated))
         for record in duplicated:
@@ -184,6 +210,14 @@ class MongoDatabase():
         issue_list.append(self.validate_quizzes())
         return issue_list
 
+    ## Updaters
+    def rename_field(self, collection, current__name, new_name):
+        collection.update_many({}, {"$rename": {current__name: new_name}})
+
+    def update_record(self, collection, search_attr, search_value, update_attr, update_value):
+        collection.update_one({search_attr: search_value}, {
+            '$set': {update_attr: update_value}
+        })
 
 
 

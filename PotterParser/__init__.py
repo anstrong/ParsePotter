@@ -1,10 +1,5 @@
-from flask import Flask
+from . import Library
+from . import app
 
-app = Flask(__name__)
-app.config["DEBUG"] = True
-
-from PotterParser import routes
-from .Library import *
-from . import __main__
 
 

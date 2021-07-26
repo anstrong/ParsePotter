@@ -1,6 +1,6 @@
-from Library import Pottermore
-    
-def webTest4():
-    site = Pottermore()
+from Library.Pottermore import Pottermore
 
-webTest4()
+def parse():
+    site = Pottermore(True, False)
+
+parse()

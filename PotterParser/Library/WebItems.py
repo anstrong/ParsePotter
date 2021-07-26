@@ -20,7 +20,7 @@ class HTMLItem():
 
 class Webpage():
     chrome_options = Options()
-    chrome_options.add_argument("--headless")
+    #chrome_options.add_argument("--headless")
     chrome_options.add_argument("--no-sandbox")
     driver = webdriver.Chrome(ChromeDriverManager().install(), options=chrome_options)
 
@@ -31,6 +31,12 @@ class Webpage():
         self.driver = Webpage.driver
         self.driver.get(self.address)
         self.driver.implicitly_wait(1)
+
+    def navigate(self, new_address):
+        self.address = new_address
+        self.driver.get(self.address)
+        self.driver.implicitly_wait(1)
+        return self
 
     def make_visible(self, class_name, wrapper = ""):
         try:

@@ -1,1 +1,1 @@
-FLASK_APP=__main__.py
+FLASK_APP=app.py
