@@ -3,7 +3,7 @@ from progress.bar import IncrementalBar
 
 class MongoDatabase():
     def __init__(self, username, password):
-        MONGODB_URI = f'mongodb+srv://{username}:{password}@quibblecluster.qmsof.mongodb.net/test'
+        MONGODB_URI = f'mongodb://{username}:{password}@quibblecluster.qmsof.mongodb.net/test'
         client = MongoClient(MONGODB_URI)
         QuibbleDB = client['QuibbleDB']
         self.answerDB = QuibbleDB['Answers']
