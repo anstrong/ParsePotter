@@ -1,5 +1,5 @@
 Flask
 bson
 pymongo
-pymongo[srv]
+'pymongo[srv]'
 progress
