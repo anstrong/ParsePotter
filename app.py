@@ -11,6 +11,12 @@ app.config["DEBUG"] = True
 
 DB = Services.MongoDatabase(os.environ.get("MONGO_USER"),os.environ.get("MONGO_PASS"))
 
+if __name__ == '__main__':
+    #app.debug = True
+    # Bind to PORT if defined, otherwise default to 5000.
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
+
 def clean(data):
     return json.loads(json.dumps(data, sort_keys=True, indent=4, default=json_util.default))
 
@@ -147,7 +153,3 @@ def get_addresses():
 @app.route('/addresses/parsed',  methods=['GET'])
 def get_parsed():
     return jsonify(clean(DB.get_record_list(DB.quizzes(), "complete", True, "address")))
-
-if __name__ == '__main__':
-    app.debug = True
-    app.run()
