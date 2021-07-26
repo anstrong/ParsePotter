@@ -3,3 +3,4 @@ bson
 pymongo
 pymongo[srv]
 progress
+python-dotenv
