@@ -1,13 +1,15 @@
-from flask import Flask, jsonify, request, redirect
-from bson.json_util import dumps
+from flask import Flask, jsonify, redirect
 from bson import json_util, objectid
 import json
 import random
+import os
 
-from .Library import *
+import Services
 
 app = Flask(__name__)
 app.config["DEBUG"] = True
+
+DB = Services.MongoDatabase(os.environ.get("MONGO_USER"),os.environ.get("MONGO_PASS"))
 
 def clean(data):
     return json.loads(json.dumps(data, sort_keys=True, indent=4, default=json_util.default))
